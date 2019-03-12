@@ -1,0 +1,46 @@
+/*styles for TK project*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+#sunburstViz {
+  background-color: pink;
+  padding: 1em;
+}
+
+p {
+  font-size: 2em;
+}
+
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  text-align: center;
+  background: lightgrey;
+  color: white;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "ownership or stewardship of outlet",
+    "interventions": [
+        "ownership by women/POC",
+        "investor diversity",
+        "board diversity",
+        "public media",
+        "community media",
+        "ethnic media",
+        "crowdfunding",
+        "incubators/accelerators"
+    ]
+  },
+  {
+    "title": "journalism education",
+    "interventions": [
+        "high school curriculum",
+        "college curriculum",
+        "scholarships",
+        "mid-career programs",
+        "fellowships",
+        "executive training"
+    ]
+  },
+  {
+    "title": "hiring",
+    "interventions": [
+        "internships",
+        "early pipeline",
+        "recruitment",
+        "freelancers",
+        "editorial staff",
+        "management",
+        "role dedicated to DEI"
+    ]
+  }
+]
