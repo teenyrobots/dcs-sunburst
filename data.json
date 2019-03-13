@@ -1,5 +1,6 @@
 [
   {
+    "slug": "ownership",
     "title": "ownership or stewardship of outlet",
     "interventions": [
         "ownership by women/POC",
@@ -13,6 +14,7 @@
     ]
   },
   {
+    "slug": "journEd",
     "title": "journalism education",
     "interventions": [
         "high school curriculum",
@@ -24,6 +26,7 @@
     ]
   },
   {
+    "slug": "hiring",
     "title": "hiring",
     "interventions": [
         "internships",
