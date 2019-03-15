@@ -3,8 +3,16 @@
 // colors
 let colors1 = [
   "red",
+  "orange",
+  "yellow",
+  "green",
   "blue",
-  "green"
+  "purple",
+  "brown",
+  "grey",
+  "lightgrey",
+  "pink",
+  "lightblue"
 ]
 
 // this function takes the data and ports it into the function that generates the viz
@@ -26,6 +34,7 @@ function arrayify(theData) {
   }
   return newArray;
 }
+
 
 function innerArrayContent(theData) {
   let newArray = [];
@@ -60,14 +69,14 @@ function sunburst(id){
   let h = 1000  - margin.top - margin.bottom;
 
   // just circle stuff
-  let outerRadius = w / 2,
+  let outerRadius = w * .5,
 	 innerRadius = h * .25,
    arc = d3.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius),
   innerArc = d3.arc()
      .innerRadius(innerRadius * .8)
-     .outerRadius(outerRadius * .8);
+     .outerRadius(outerRadius * .85);
 
   let pie = d3.pie();
 
@@ -100,40 +109,35 @@ function sunburst(id){
 
     innerArcs.append("path")
       .attr("fill", function(d, i) {
-        if(i < 10) {
-          let lilColor = "rgb(255,"+ i*10 +", 255)";
+        if(i < 8) {
+          let lilColor = "rgb(0,"+ i*11 +", 0)";
           console.log(lilColor);
           return lilColor;
-        } else if (i < 20){
-          let lilColor = "rgb(255, 255,"+ i*10 +")";
+        } else if (i < 15){
+          let lilColor = "rgb(0, 0,"+ i*11 +")";
           console.log(lilColor);
           return lilColor;
         } else {
-          return "#000";
+          let lilColor = "rgb("+ i*11 + ", 0, 0)";
+          return lilColor;
         }
       })
       .attr("stroke", "white")
       .attr("d", innerArc)
+      .on("mouseover", function() { d3.select(this)
+          .classed("orange", true);
+      })
+      .on("mouseout", function(d) { d3.select(this)
+          .classed("orange", false);
+      })
       .on("click", function(d, i) {
+        d3.select("#intervention").remove();
         svg.append("text")
           .text(innerArrayContent(theData)[i])
+          .attr("id", "intervention")
           .attr("x", w/2)
           .attr("y", h/2)
           .style("text-anchor", "middle");
         console.log(innerArrayContent(theData)[i]);
     });
-
-
-  // print all the titles
-  svg.selectAll("text")
-    .data(theData)
-    .enter()
-    .append("text")
-    .text(function(d){
-      return d.title;
-    })
-    .attr("y", function(d, i) {
-      return 50*i;
-    })
-
 }

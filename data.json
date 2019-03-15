@@ -37,5 +37,120 @@
         "management",
         "role dedicated to DEI"
     ]
+  },
+  {
+    "slug": "retention",
+    "title": "retention and culture",
+    "interventions": [
+        "inclusive hiring practices",
+        "promotion",
+        "support for external networking",
+        "room for many forms of cultural expression",
+        "regular DEI trainings",
+        "support from leadership",
+        "employee peer groups",
+        "mentors/mentorship programs",
+        "robust and effective HR policies",
+        "mechanisms for external accountability"
+    ]
+  },
+  {
+    "slug": "sourcing",
+    "title": "inclusion in sourcing",
+    "interventions": [
+        "by race",
+        "by ethnicity",
+        "by gender",
+        "by sexual orientation",
+        "by faith group",
+        "by nationality",
+        "by language group",
+        "by class",
+        "by neighborhood or region",
+        "by age",
+        "by ability"
+      ]
+  },
+  {
+    "slug": "coverage",
+    "title": "coverage",
+    "interventions": [
+        "range of beats",
+        "prominance of beats",
+        "story selection",
+        "tone/voice/style",
+        "fighting stereotypes",
+        "solutions journalism"
+      ]
+  },
+  {
+    "slug": "engagement",
+    "title": "audience engagement",
+    "interventions": [
+        "during story selection",
+        "over course of reporting",
+        "responses (comments, letters, etc.)",
+        "events",
+        "crowdsourcing",
+        "media production trainings",
+        "policies and protections for dealing with harrassment from audience"
+      ]
+  },
+  {
+    "slug": "innovation",
+    "title": "innovation",
+    "interventions": [
+        "new platforms that reach diverse audiences",
+        "new story forms that reach/reflect diverse audiences",
+        "new modes of interaction that give diverse audiences more voice or agency",
+        "new business models that increase targeted engagement or distribution",
+        "support for innovation by underrepresented groups"
+      ]
+  },
+  {
+    "slug": "distribution",
+    "title": "distribution",
+    "interventions": [
+        "to underserved demographics",
+        "to selected regions",
+        "to additional language groups",
+        "to lower literacy audiences"
+      ]
+  },
+  {
+    "slug": "partnerships",
+    "title": "partnerships",
+    "interventions": [
+        "with community groups",
+        "with other outlets that have diverse audiences",
+        "with faith organizations",
+        "with educational organizations",
+        "with cultural organizations",
+        "with social platforms",
+        "with diverse influentials or opinion leaders"
+      ]
+  },
+  {
+    "slug": "evaluation",
+    "title": "evaluation",
+    "interventions": [
+        "tracking diversity",
+        "measuring inclusion",
+        "tracking influence",
+        "tracking sentiment",
+        "tracking social impact outcomes"
+      ]
+  },
+  {
+    "slug": "industry",
+    "title": "larger industry",
+    "interventions": [
+        "industry standards",
+        "comparative statistics",
+        "sample guidelines and policies",
+        "best practices",
+        "professional organizations",
+        "awards"
+      ]
   }
 ]

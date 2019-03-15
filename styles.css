@@ -29,8 +29,12 @@ body {
 }
 
 #sunburstViz {
-  background-color: pink;
+  /* background-color: pink; */
   padding: 1em;
+}
+
+.orange {
+  fill: orange;
 }
 
 p {
