@@ -15,6 +15,21 @@ let colors1 = [
   "lightblue"
 ]
 
+let colors2 = [
+  "67, 57, 149",
+  "114, 17, 48",
+  "36, 246, 251",
+  "113, 137, 66",
+  "102, 56, 240",
+  "255, 191, 0",
+  "31, 8, 151",
+  "212, 21, 134",
+  "0, 184, 141",
+  "255, 102, 77",
+  "27, 1, 71",
+  "231, 238, 0"
+]
+
 // this function takes the data and ports it into the function that generates the viz
 d3.json("data.json", function(data) {
   theData = data;
@@ -76,9 +91,10 @@ function sunburst(id){
     .outerRadius(outerRadius),
   innerArc = d3.arc()
      .innerRadius(innerRadius * .8)
-     .outerRadius(outerRadius * .85);
+     .outerRadius(outerRadius * .9);
 
-  let pie = d3.pie();
+  let pie = d3.pie()
+    .sort(null);
 
   // this is the svg the viz will be inside
   let svg = d3.select(id).append("svg")
@@ -95,11 +111,38 @@ function sunburst(id){
 
     arcs.append("path")
       .attr("fill", function(d, i) {
-        return colors1[i];
+        let arcColor = "rgb("+colors2[i]+")";
+        return arcColor;
       })
       .attr("d", arc);
 
+    arcs.append("svg:text")
+      .attr("transform", function(d) { //set the label's origin to the center of the arc
+        //we have to make sure to set these before calling arc.centroid
+       d.outerRadius = outerRadius - 50; // Set Outer Coordinate
+       d.innerRadius = outerRadius + 45; // Set Inner Coordinate
+        return "translate(" + arc.centroid(d) + ")rotate(" + angleOuter(d) + ")";
+      })
+      .attr("text-anchor", "middle")
+      .attr('dy', '-75') //center the text on it's origin
+      .text(function(d, i){
+        let a = theData[i].title;
+        return a; //get the label from our original data array
+      })
+      .classed("labels", true)
+      // Computes the angle of an arc, converting from radians to degrees.
+      function angleOuter(d) {
+        var a = (d.startAngle + d.endAngle) * 90 / Math.PI;
+        return a;
+      //RETURN UPSIDE DOWN FOR BOTTOM??
+        // if (a > 90 && a < 270) {
+        //   return a;
+        // } else {
+        //   return a-180;
+        // }
+      }
 
+//MAKE INNER PIE
   let innerArcs = svg.selectAll("g.innerArc")
       .data(pie(innerArray(theData)))
       .enter()
@@ -108,15 +151,19 @@ function sunburst(id){
 
     innerArcs.append("path")
       .attr("fill", function(d, i) {
-        if(i < 8) {
-          let lilColor = "rgb(0,"+ i*11 +", 0)";
+        let dataArray = arrayify(theData);
+        if (i < dataArray[0]) {
+          let lilColor = "rgba(" + colors2[0] + ", 0." + i + ")";
+          console.log(lilColor);
           return lilColor;
-        } else if (i < 15){
-          let lilColor = "rgb(0, 0,"+ i*11 +")";
+        } else if (i < dataArray[0]+dataArray[1]){
+          let lilColor = "rgba(" + colors2[1] + ", 0." + i + ")";
+          return lilColor;
+        } else if (i < dataArray[0]+dataArray[1]+dataArray[2]) {
+          let lilColor = "rgba(" + colors2[2] + ", 0." + i + ")";
           return lilColor;
         } else {
-          let lilColor = "rgb("+ i*11 + ", 0, 0)";
-          return lilColor;
+          let lilColor = "pink";
         }
       })
       .attr("stroke", "white")
@@ -136,24 +183,22 @@ function sunburst(id){
           .attr("y", h/2)
           .style("text-anchor", "middle");
     })
-    ;
 
     innerArcs.append("svg:text")
-      .attr("transform", function(d) { //set the label's origin to the center of the arc
-        //we have to make sure to set these before calling arc.centroid
-      //  d.outerRadius = outerRadius - 50; // Set Outer Coordinate
-      //  d.innerRadius = outerRadius + 45; // Set Inner Coordinate
-        return "translate(" + innerArc.centroid(d) + ")rotate(" + angle(d) + ")";
+      .attr("transform", function(d) {
+        return "translate(" + innerArc.centroid(d) + ")rotate(" + angleInner(d) + ")";
       })
       .attr("text-anchor", "middle") //center the text on it's origin
       .text(function(d, i){
         let a = innerArrayContent(theData)[i];
         return a; //get the label from our original data array
       })
-      .classed("innerLabels", true)
+      .classed("labels", true)
       // Computes the angle of an arc, converting from radians to degrees.
-      function angle(d) {
+      function angleInner(d) {
         var a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
         return a > 90 ? a - 180 : a;
       }
+
+
 }

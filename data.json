@@ -44,14 +44,14 @@
     "interventions": [
         "inclusive hiring practices",
         "promotion",
-        "support for external networking",
-        "room for many forms of cultural expression",
+        "support external networking",
+        "support cultural expression",
         "regular DEI trainings",
         "support from leadership",
         "employee peer groups",
-        "mentors/mentorship programs",
-        "robust and effective HR policies",
-        "mechanisms for external accountability"
+        "mentorship programs",
+        "robust HR policies",
+        "external accountability"
     ]
   },
   {
@@ -89,22 +89,22 @@
     "interventions": [
         "during story selection",
         "over course of reporting",
-        "responses (comments, letters, etc.)",
+        "responses (comments, etc.)",
         "events",
         "crowdsourcing",
         "media production trainings",
-        "policies and protections for dealing with harrassment from audience"
+        "harrassment protections"
       ]
   },
   {
     "slug": "innovation",
     "title": "innovation",
     "interventions": [
-        "new platforms that reach diverse audiences",
-        "new story forms that reach/reflect diverse audiences",
-        "new modes of interaction that give diverse audiences more voice or agency",
-        "new business models that increase targeted engagement or distribution",
-        "support for innovation by underrepresented groups"
+        "reaching diverse audiences",
+        "reflecting diverse audiences",
+        "agency through interactions",
+        "new business models",
+        "from underrepresented groups"
       ]
   },
   {
@@ -121,24 +121,24 @@
     "slug": "partnerships",
     "title": "partnerships",
     "interventions": [
-        "with community groups",
-        "with other outlets that have diverse audiences",
-        "with faith organizations",
-        "with educational organizations",
-        "with cultural organizations",
-        "with social platforms",
-        "with diverse influentials or opinion leaders"
+        "community groups",
+        "outlets with diverse audiences",
+        "faith organizations",
+        "educational organizations",
+        "cultural organizations",
+        "social platforms",
+        "diverse opinion leaders"
       ]
   },
   {
     "slug": "evaluation",
     "title": "evaluation",
     "interventions": [
-        "tracking diversity",
+        "diversity",
         "measuring inclusion",
-        "tracking influence",
-        "tracking sentiment",
-        "tracking social impact outcomes"
+        "influence",
+        "sentiment",
+        "social impact outcomes"
       ]
   },
   {

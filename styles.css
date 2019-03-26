@@ -37,9 +37,10 @@ body {
   fill: orange;
 }
 
-.innerLabels {
+.labels {
   fill: white;
   pointer-events: none;
+  font-size: 1em;
 }
 
 p {
