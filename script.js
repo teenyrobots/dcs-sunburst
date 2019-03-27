@@ -18,16 +18,16 @@ let colors1 = [
 let colors2 = [
   "67, 57, 149",
   "114, 17, 48",
-  "36, 246, 251",
+  "0, 151, 207",
   "113, 137, 66",
   "102, 56, 240",
-  "255, 191, 0",
+  "255, 169, 0",
   "31, 8, 151",
   "212, 21, 134",
   "0, 184, 141",
   "255, 102, 77",
   "27, 1, 71",
-  "231, 238, 0"
+  "131, 186, 18"
 ]
 
 // this function takes the data and ports it into the function that generates the viz
@@ -117,11 +117,10 @@ function sunburst(id){
       .attr("d", arc);
 
     arcs.append("svg:text")
-      .attr("transform", function(d) { //set the label's origin to the center of the arc
-        //we have to make sure to set these before calling arc.centroid
-       d.outerRadius = outerRadius - 50; // Set Outer Coordinate
-       d.innerRadius = outerRadius + 45; // Set Inner Coordinate
-        return "translate(" + arc.centroid(d) + ")rotate(" + angleOuter(d) + ")";
+      .attr("transform", function(d) {
+        console.log(arc.centroid(d));
+        let c = arc.centroid(d);
+        return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
       })
       .attr("text-anchor", "middle")
       .attr('dy', '-75') //center the text on it's origin
@@ -149,22 +148,31 @@ function sunburst(id){
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
+  let currentIndex = 0;
+  let dataArray = arrayify(theData);
+  let adder = dataArray[currentIndex];
+  // console.log(dataArray);
+
     innerArcs.append("path")
       .attr("fill", function(d, i) {
-        let dataArray = arrayify(theData);
-        if (i < dataArray[0]) {
-          let lilColor = "rgba(" + colors2[0] + ", 0." + i + ")";
-          console.log(lilColor);
+
+        // console.log("i is: " + i);
+        // console.log("the current index is: "+currentIndex);
+        // console.log("dataArray[currentIndex] is: " + dataArray[currentIndex]);
+        // console.log("the adder is: "+adder);
+
+        if (i < adder) {
+          let lilColor = "rgb(" + colors2[currentIndex] + ")";
           return lilColor;
-        } else if (i < dataArray[0]+dataArray[1]){
-          let lilColor = "rgba(" + colors2[1] + ", 0." + i + ")";
+        } else if (i == adder){
+          currentIndex += 1;
+          adder += dataArray[currentIndex];
+          let lilColor = "rgb(" + colors2[currentIndex] + ")";
           return lilColor;
-        } else if (i < dataArray[0]+dataArray[1]+dataArray[2]) {
-          let lilColor = "rgba(" + colors2[2] + ", 0." + i + ")";
-          return lilColor;
-        } else {
+        }  else {
           let lilColor = "pink";
         }
+
       })
       .attr("stroke", "white")
       .attr("d", innerArc)
@@ -193,6 +201,7 @@ function sunburst(id){
         let a = innerArrayContent(theData)[i];
         return a; //get the label from our original data array
       })
+      .attr('dy', '+5')
       .classed("labels", true)
       // Computes the angle of an arc, converting from radians to degrees.
       function angleInner(d) {
