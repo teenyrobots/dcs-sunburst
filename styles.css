@@ -1,6 +1,6 @@
 /*styles for TK project*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i');
 
 * {
   box-sizing: border-box;
@@ -31,6 +31,26 @@ body {
 #sunburstViz {
   /* background-color: pink; */
   padding: 1em;
+  position: relative;
+}
+
+.center {
+  width: 20%;
+  height: 25%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#intialContent {
+  text-align: center;
+}
+
+#content {
+  display: none;
 }
 
 .orange {
@@ -40,7 +60,8 @@ body {
 .labels {
   fill: white;
   pointer-events: none;
-  font-size: 1em;
+  font-size: .9em;
+  font-weight: 300;
 }
 
 p {

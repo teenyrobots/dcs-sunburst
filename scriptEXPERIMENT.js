@@ -50,7 +50,6 @@ function arrayify(theData) {
   return newArray;
 }
 
-
 function innerArrayContent(theData) {
   let newArray = [];
   for (var i in theData) {
@@ -69,6 +68,16 @@ function innerArray(theData) {
     numericArray.push(newArray.length / newArray.length);
   }
   return numericArray;
+}
+
+function objectify(theData) {
+  let newObject = [];
+  for (var i in theData) {
+    let newObjectum = theData[i].interventions;
+    console.log("the new objectum is "+newObjectum);
+    newObject.push(newObjectum);
+  }
+  return newObject;
 }
 
 //
@@ -93,7 +102,19 @@ function sunburst(id){
      .innerRadius(innerRadius * .8)
      .outerRadius(outerRadius * .9);
 
+//OLD PIE
+  // let pie = d3.pie()
+  //   .sort(null);
+
+// NEW AND IMPROVED PIE
   let pie = d3.pie()
+    .value(function(d) {
+      return d.interventions.length;
+    })
+    .sort(null);
+
+  let lilpie = d3.pie()
+
     .sort(null);
 
   // this is the svg the viz will be inside
@@ -104,7 +125,8 @@ function sunburst(id){
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   let arcs = svg.selectAll("g.arc")
-      .data(pie(arrayify(theData)))
+      // .data(pie(arrayify(theData)))
+      .data(pie(theData))
       .enter()
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
@@ -143,14 +165,14 @@ function sunburst(id){
 
 //MAKE INNER PIE
   let innerArcs = svg.selectAll("g.innerArc")
-      .data(pie(innerArray(theData)))
+      .data(lilpie(innerArray(theData)))
       .enter()
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
   let currentIndex = 0;
-  let dataArray = arrayify(theData);
-  let adder = dataArray[currentIndex];
+  let dataObject = objectify(theData);
+  let adder = dataObject[currentIndex];
 
     innerArcs.append("path")
       .attr("fill", function(d, i) {
@@ -159,7 +181,7 @@ function sunburst(id){
           return lilColor;
         } else if (i == adder){
           currentIndex += 1;
-          adder += dataArray[currentIndex];
+          adder += dataObject[currentIndex].length;
           let lilColor = "rgb(" + colors2[currentIndex] + ")";
           return lilColor;
         }  else {
@@ -194,7 +216,6 @@ function sunburst(id){
           let a = innerArrayContent(theData)[i];
           return a; //get the label from our original data array
         }
-        
       )
       .attr('dy', '+5')
       .classed("labels", true)
