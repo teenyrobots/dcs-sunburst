@@ -116,7 +116,7 @@ function sunburst(id){
       })
       .attr("d", arc);
 
-    arcs.append("svg:text")
+    arcs.append("text")
       .attr("transform", function(d) {
         let c = arc.centroid(d);
         return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
@@ -153,6 +153,7 @@ function sunburst(id){
   let adder = dataArray[currentIndex];
 
     innerArcs.append("path")
+      .classed("path", true)
       .attr("fill", function(d, i) {
         if (i < adder) {
           let lilColor = "rgb(" + colors2[currentIndex] + ")";
@@ -181,6 +182,9 @@ function sunburst(id){
           d3.select("#content").style("display", "block");
           let title = d3.select('#title');
           title.text(innerArrayContent(theData)[i]);
+          d3.selectAll(".path").classed("selected", false);
+          d3.select(this).classed("selected", true);
+
         }
     )
 
@@ -194,7 +198,6 @@ function sunburst(id){
           let a = innerArrayContent(theData)[i];
           return a; //get the label from our original data array
         }
-        
       )
       .attr('dy', '+5')
       .classed("labels", true)
