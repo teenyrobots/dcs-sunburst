@@ -15,7 +15,7 @@ let colors1 = [
   "lightblue"
 ]
 
-let colors2 = [
+let colors = [
   "67, 57, 149",
   "114, 17, 48",
   "0, 151, 207",
@@ -30,12 +30,29 @@ let colors2 = [
   "131, 186, 18"
 ]
 
+let colors4 = [
+  "222, 170, 33",
+  "225, 162, 49",
+  "228, 154, 63",
+  "231, 145, 74",
+  "233, 137, 86",
+  "236, 129, 97",
+  "239, 120, 108",
+  "241, 113, 118",
+  "244, 104, 128",
+  "247, 96, 139",
+  "249, 87, 150",
+  "250, 82, 159"
+]
+
 // this function takes the data and ports it into the function that generates the viz
 d3.json("data.json", function(data) {
   theData = data;
+
   // the function to do something with the data
   // this function is a placeholder and doesn't actually do anything yet
   sunburst("#sunburstViz");
+
 });
 
 // helper functions
@@ -48,6 +65,7 @@ function arrayify(theData) {
   return newArray;
 }
 
+
 function innerArrayContent(theData) {
   let newArray = [];
   for (var i in theData) {
@@ -59,23 +77,28 @@ function innerArrayContent(theData) {
   return newArray;
 };
 
+function innerArrayContentOpp(theData) {
+  let newArray = [];
+  for (var i in theData) {
+    for (j in theData[i].interventions) {
+      let newDatum = {};
+      newDatum.int = theData[i].interventions[j];
+      newDatum.cat = theData[i].title;
+      newDatum.color = colors[i];
+      newArray.push(newDatum);
+    }
+  }
+  return newArray;
+};
+
+
 function innerArray(theData) {
-  let newArray = innerArrayContent(theData)
+  let newArray = innerArrayContentOpp(theData)
   let numericArray = [];
   for (i in newArray) {
     numericArray.push(newArray.length / newArray.length);
   }
   return numericArray;
-}
-
-function objectify(theData) {
-  let newObject = [];
-  for (var i in theData) {
-    let newObjectum = theData[i].interventions;
-    console.log("the new objectum is "+newObjectum);
-    newObject.push(newObjectum);
-  }
-  return newObject;
 }
 
 //
@@ -100,20 +123,14 @@ function sunburst(id){
      .innerRadius(innerRadius * .8)
      .outerRadius(outerRadius * .9);
 
-//OLD PIE
-  // let pie = d3.pie()
-  //   .sort(null);
+   let bigPie = d3.pie()
+     .value(function(d) {
+       return d.interventions.length;
+     })
+     .sort(null);
 
-// NEW AND IMPROVED PIE
-  let pie = d3.pie()
-    .value(function(d) {
-      return d.interventions.length;
-    })
-    .sort(null);
-
-  let lilpie = d3.pie()
-
-    .sort(null);
+   let lilPie = d3.pie()
+     .sort(null);
 
   // this is the svg the viz will be inside
   let svg = d3.select(id).append("svg")
@@ -123,20 +140,19 @@ function sunburst(id){
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   let arcs = svg.selectAll("g.arc")
-      // .data(pie(arrayify(theData)))
-      .data(pie(theData))
+      .data(bigPie(theData))
       .enter()
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
     arcs.append("path")
       .attr("fill", function(d, i) {
-        let arcColor = "rgba("+colors2[i]+", 0.75)";
+        let arcColor = "rgba("+colors[i]+", 0.75)";
         return arcColor;
       })
       .attr("d", arc);
 
-    arcs.append("svg:text")
+    arcs.append("text")
       .attr("transform", function(d) {
         let c = arc.centroid(d);
         return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
@@ -162,30 +178,25 @@ function sunburst(id){
       }
 
 //MAKE INNER PIE
+
+  let dataOpp = innerArrayContentOpp(theData);
+  console.log(dataOpp);
+
   let innerArcs = svg.selectAll("g.innerArc")
-      .data(lilpie(innerArray(theData)))
+      .data(lilPie(innerArray(theData)))
       .enter()
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
-  let currentIndex = 0;
-  let dataObject = objectify(theData);
-  let adder = dataObject[currentIndex];
+  // let currentIndex = 0;
+  // let dataArray = arrayify(theData);
+  // let adder = dataArray[currentIndex];
 
     innerArcs.append("path")
+      .classed("path", true)
       .attr("fill", function(d, i) {
-        if (i < adder) {
-          let lilColor = "rgb(" + colors2[currentIndex] + ")";
-          return lilColor;
-        } else if (i == adder){
-          currentIndex += 1;
-          adder += dataObject[currentIndex].length;
-          let lilColor = "rgb(" + colors2[currentIndex] + ")";
-          return lilColor;
-        }  else {
-          let lilColor = "pink";
-        }
-
+        let arcColor = "rgb(" + dataOpp[i].color + ")";
+        return arcColor;
       })
       .attr("stroke", "white")
       .attr("d", innerArc)
@@ -200,26 +211,44 @@ function sunburst(id){
           d3.select("#intialContent").style("display", "none");
           d3.select("#content").style("display", "block");
           let title = d3.select('#title');
-          title.text(innerArrayContent(theData)[i]);
+          let cat = d3.select('#cat');
+
+          title.text(dataOpp[i].int);
+          cat.text(dataOpp[i].cat);
+
+          d3.selectAll(".path").classed("selected", false);
+          d3.select(this).classed("selected", true);
+
         }
     )
 
     innerArcs.append("svg:text")
-      .attr("transform", function(d) {
-        return "translate(" + innerArc.centroid(d) + ")rotate(" + angleInner(d) + ")";
+      .attr("transform", function(d, i) {
+        return "translate(" + innerArc.centroid(d) + ")rotate(" + angleInner(d, i) + ")";
       })
       .attr("text-anchor", "middle") //center the text on it's origin
       .text(function(d, i)
         {
-          let a = innerArrayContent(theData)[i];
+          let a = dataOpp[i].int;
           return a; //get the label from our original data array
         }
       )
       .attr('dy', '+5')
       .classed("labels", true)
+
       // Computes the angle of an arc, converting from radians to degrees.
-      function angleInner(d) {
-        var a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
+      function angleInner(d, i) {
+        let a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
+
+    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT DOESN'T WORK
+        // let nextData = i+1;
+        // if (a > 90 && dataOpp[i].cat === dataOpp[nextData].cat) {
+        //   a = a-180;
+        //   return a;
+        // } else {
+        //   return a;
+        // }
+
         return a > 90 ? a - 180 : a;
       }
 
