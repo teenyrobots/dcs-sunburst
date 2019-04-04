@@ -115,12 +115,12 @@ function sunburst(id){
 
   // just circle stuff
   let outerRadius = w * .5,
-	 innerRadius = h * .25,
+	 innerRadius = h * .425,
    arc = d3.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius),
   innerArc = d3.arc()
-     .innerRadius(innerRadius * .8)
+     .innerRadius(innerRadius * .45)
      .outerRadius(outerRadius * .9);
 
    let bigPie = d3.pie()
@@ -158,7 +158,7 @@ function sunburst(id){
         return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
       })
       .attr("text-anchor", "middle")
-      .attr('dy', '-75') //center the text on it's origin
+      // .attr('dy', '-75')
       .text(function(d, i){
         let a = theData[i].title;
         return a; //get the label from our original data array
@@ -168,19 +168,20 @@ function sunburst(id){
       // Computes the angle of an arc, converting from radians to degrees.
       function angleOuter(d) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI;
-        return a;
+        console.log(a);
+        // return a;
+
       //RETURN UPSIDE DOWN FOR BOTTOM?? this is super broken
-        // if (a > 90 && a < 270) {
-        //   return a-180;
-        // } else {
-        //   return a;
-        // }
+        if (a > 90 && a < 270) {
+          return a-180;
+        } else {
+          return a;
+        }
       }
 
 //MAKE INNER PIE
 
   let dataOpp = innerArrayContentOpp(theData);
-  console.log(dataOpp);
 
   let innerArcs = svg.selectAll("g.innerArc")
       .data(lilPie(innerArray(theData)))
@@ -188,9 +189,6 @@ function sunburst(id){
       .append('g')
       .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
-  // let currentIndex = 0;
-  // let dataArray = arrayify(theData);
-  // let adder = dataArray[currentIndex];
 
     innerArcs.append("path")
       .classed("path", true)
@@ -210,17 +208,20 @@ function sunburst(id){
         {
           d3.select("#intialContent").style("display", "none");
           d3.select("#content").style("display", "block");
-          let title = d3.select('#title');
-          let cat = d3.select('#cat');
+          let title = d3.selectAll('.title');
+          let cat = d3.selectAll('.cat');
 
           title.text(dataOpp[i].int);
           cat.text(dataOpp[i].cat);
 
           d3.selectAll(".path").classed("selected", false);
           d3.select(this).classed("selected", true);
-
         }
     )
+
+    function exShow() {
+      getElementById('#exShow').setAttribute("style", "display: flex;")
+    }
 
     innerArcs.append("svg:text")
       .attr("transform", function(d, i) {
@@ -240,17 +241,28 @@ function sunburst(id){
       function angleInner(d, i) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
 
-    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT DOESN'T WORK
-        // let nextData = i+1;
-        // if (a > 90 && dataOpp[i].cat === dataOpp[nextData].cat) {
+    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT IT'S HONESTLY A PRETTY BOGUS SOLUTION
+        if (dataOpp[i+1] === undefined) {
+          return a;
+        } else {
+          if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
+            a = a-180;
+            return a;
+          } else if (a > 95) {
+            a = a-180;
+            return a;
+          } else {
+            return a;
+          }
+        }
+
+        // if (a > 90) {
         //   a = a-180;
         //   return a;
         // } else {
         //   return a;
         // }
 
-        return a > 90 ? a - 180 : a;
+        // return a > 90 ? a - 180 : a;
       }
-
-
 }
