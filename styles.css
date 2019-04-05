@@ -31,7 +31,13 @@ body {
 #sunburstViz {
   /* background-color: pink; */
   position: relative;
+  /* max-width: 100%; lol */
 }
+
+/* lol
+svg {
+  max-width: 100%;
+} */
 
 .center {
   width: 250px;
@@ -42,6 +48,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.center * {
+  width: 250px;
 }
 
 #intialContent {
@@ -65,16 +75,16 @@ body {
 #ex {
   position: absolute;
   margin: auto;
-  top: 25px;
-  left: 25px;
+  /* top: 25px;
+  left: 25px; */
   /* display: flex; */
   align-items: center;
   width: 95%;
   height: 95%;
   max-width: 950px;
-  margin: auto;
+  margin: auto 1em;
   justify-content: center;
- display: none;
+  display: none;
 }
 
 #ex div {
@@ -82,12 +92,12 @@ body {
   background-color: white;
   padding: 1em;
   width: 90vh;
-  max-width: 950px;
+  max-width: 600px;
   margin: auto;
   box-shadow: 5px 10px 8px rgba(0,0,0, .5);
 }
 
-#goodbye {
+.linkish {
   color: blue;
   text-decoration: underline;
   text-align: right;
@@ -95,11 +105,11 @@ body {
 }
 
 .orange {
-  fill: orange;
+  fill: #c9bf00;
 }
 
 .selected {
-  fill: #E14C00;
+  fill: #898200;
 }
 
 .labels {

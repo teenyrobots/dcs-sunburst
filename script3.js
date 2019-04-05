@@ -2,20 +2,6 @@
 
 // colors
 let colors1 = [
-  "red",
-  "orange",
-  "yellow",
-  "green",
-  "blue",
-  "purple",
-  "brown",
-  "grey",
-  "lightgrey",
-  "pink",
-  "lightblue"
-]
-
-let colors = [
   "67, 57, 149",
   "114, 17, 48",
   "0, 151, 207",
@@ -30,7 +16,7 @@ let colors = [
   "131, 186, 18"
 ]
 
-let colors4 = [
+let colors3 = [
   "222, 170, 33",
   "225, 162, 49",
   "228, 154, 63",
@@ -45,14 +31,55 @@ let colors4 = [
   "250, 82, 159"
 ]
 
+let colors4 = [
+  "7, 147, 124",
+  "36, 72, 64",
+  "0, 88, 186",
+  "0, 32, 67",
+  "58, 98, 120",
+  "24, 48, 59",
+  "7, 147, 124",
+  "36, 72, 64",
+  "0, 88, 186",
+  "0, 32, 67",
+  "58, 98, 120",
+  "24, 48, 59"
+]
+
+let colors = [
+  "7, 146, 123",
+  "31, 74, 66",
+  "14, 125, 147",
+  "33, 66, 74",
+  "20, 79, 147",
+  "33, 53, 75",
+  "24, 34, 148",
+  "34, 38, 75",
+  "98, 16, 148",
+  "57, 33, 75",
+  "148, 20, 115",
+  "75, 33, 63"
+]
+
+let colors5 = [
+  "89, 89, 89",
+  "37, 100, 163",
+  "89, 89, 89",
+  "37, 100, 163",
+  "89, 89, 89",
+  "37, 100, 163",
+  "89, 89, 89",
+  "37, 100, 163",
+  "89, 89, 89",
+  "37, 100, 163",
+  "89, 89, 89",
+  "37, 100, 163",
+]
+
 // this function takes the data and ports it into the function that generates the viz
 d3.json("data.json", function(data) {
   theData = data;
-
-  // the function to do something with the data
-  // this function is a placeholder and doesn't actually do anything yet
   sunburst("#sunburstViz");
-
 });
 
 // helper functions
@@ -64,7 +91,6 @@ function arrayify(theData) {
   }
   return newArray;
 }
-
 
 function innerArrayContent(theData) {
   let newArray = [];
@@ -91,7 +117,6 @@ function innerArrayContentOpp(theData) {
   return newArray;
 };
 
-
 function innerArray(theData) {
   let newArray = innerArrayContentOpp(theData)
   let numericArray = [];
@@ -101,10 +126,16 @@ function innerArray(theData) {
   return numericArray;
 }
 
-//
-function sunburst(id){
+function exShow() {
+  document.getElementById('ex').setAttribute("style", "display: flex;");
+}
 
-  console.log('the sunburst function is running');
+function exBye() {
+  document.getElementById('ex').setAttribute("style", "display: none;");
+}
+
+// HERE'S THE SUNBURST GENERATOR
+function sunburst(id){
 
   // bostock's margin convention leaves room for scales and stuff
   let margin = {top: 50, right: 50, bottom: 10, left: 50};
@@ -113,7 +144,7 @@ function sunburst(id){
   let w = 1000 - margin.left - margin.right;
   let h = 1000  - margin.top - margin.bottom;
 
-  // just circle stuff
+  // circle stuff
   let outerRadius = w * .5,
 	 innerRadius = h * .425,
    arc = d3.arc()
@@ -123,12 +154,9 @@ function sunburst(id){
      .innerRadius(innerRadius * .45)
      .outerRadius(outerRadius * .9);
 
-   let bigPie = d3.pie()
-     .value(function(d) {
-       return d.interventions.length;
-     })
+  let bigPie = d3.pie()
+     .value(function(d) {return d.interventions.length;})
      .sort(null);
-
    let lilPie = d3.pie()
      .sort(null);
 
@@ -140,38 +168,62 @@ function sunburst(id){
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   let arcs = svg.selectAll("g.arc")
-      .data(bigPie(theData))
-      .enter()
-      .append('g')
-      .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
+    .data(bigPie(theData))
+    .enter()
+    .append('g')
+    .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
 
-    arcs.append("path")
-      .attr("fill", function(d, i) {
-        let arcColor = "rgba("+colors[i]+", 0.75)";
-        return arcColor;
-      })
-      .attr("d", arc);
+  arcs.append("path")
+    .attr("fill", function(d, i) {
+      let arcColor = "rgba("+colors[i]+", 0.75)";
+      return arcColor;
+    })
+    .attr("d", arc);
 
-    arcs.append("text")
-      .attr("transform", function(d) {
-        let c = arc.centroid(d);
-        return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
-      })
-      .attr("text-anchor", "middle")
-      // .attr('dy', '-75')
-      .text(function(d, i){
+
+//-----------
+// THIS ONE I'M TRYING TO MAKE WORK
+
+// let textArcs = svg.selectAll("g.arc")
+//   .append("text")
+//     .attr("d", arc)
+//     .attr("stroke", "red")
+//     .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
+//
+//     textArcs.append("textPath")
+//       .attr("transform", function(d) {
+//         let c = arc.centroid(d);
+//         return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
+//       })
+//       .attr("text-anchor", "middle")
+//       .text(function(d, i){
+//           let a = theData[i].title;
+//           return a; //get the label from our original data array
+//       });
+//         // .classed("labels", true)
+
+
+//------------
+
+//THIS ONE WORKS BUT IS NOT ON A PATH
+  arcs.append("text")
+    .attr("transform", function(d) {
+      let c = arc.centroid(d);
+      return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
+    })
+    .attr("text-anchor", "middle")
+    .attr("dominant-baseline", "mathematical")
+    .text(function(d, i){
         let a = theData[i].title;
         return a; //get the label from our original data array
-      })
+    })
       .classed("labels", true)
 
       // Computes the angle of an arc, converting from radians to degrees.
       function angleOuter(d) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI;
-        console.log(a);
-        // return a;
 
-      //RETURN UPSIDE DOWN FOR BOTTOM?? this is super broken
+      //RETURN UPSIDE DOWN FOR BOTTOM
         if (a > 90 && a < 270) {
           return a-180;
         } else {
@@ -181,6 +233,9 @@ function sunburst(id){
 
 //MAKE INNER PIE
 
+  //this is the opposite land data that you can reference to get info about
+  //current intervention, but I did a bad job of matching up the key names to
+  //the original data structure bc I was hacking :(
   let dataOpp = innerArrayContentOpp(theData);
 
   let innerArcs = svg.selectAll("g.innerArc")
@@ -207,7 +262,7 @@ function sunburst(id){
       .on("click", function(d, i)
         {
           d3.select("#intialContent").style("display", "none");
-          d3.select("#content").style("display", "block");
+          d3.select("#content").style("display", "flex");
           let title = d3.selectAll('.title');
           let cat = d3.selectAll('.cat');
 
@@ -218,10 +273,6 @@ function sunburst(id){
           d3.select(this).classed("selected", true);
         }
     )
-
-    function exShow() {
-      getElementById('#exShow').setAttribute("style", "display: flex;")
-    }
 
     innerArcs.append("svg:text")
       .attr("transform", function(d, i) {
@@ -255,14 +306,5 @@ function sunburst(id){
             return a;
           }
         }
-
-        // if (a > 90) {
-        //   a = a-180;
-        //   return a;
-        // } else {
-        //   return a;
-        // }
-
-        // return a > 90 ? a - 180 : a;
       }
 }
