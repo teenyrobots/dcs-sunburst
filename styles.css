@@ -105,15 +105,15 @@ svg {
 }
 
 .orange {
-  fill: #c9bf00;
+  fill: #f1e500;
 }
 
 .selected {
-  fill: #898200;
+  fill: #b2a800;
 }
 
 .labels {
-  fill: white;
+  fill: 44, 32, 31;
   pointer-events: none;
   font-size: .9em;
   font-weight: 300;
