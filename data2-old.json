@@ -1,9 +1,11 @@
 [
   {
     "slug": "ownership",
-    "title": "business models",
+    "title": "ownership or stewardship of outlet",
     "interventions": [
+        "ownership by women/POC",
         "investor diversity",
+        "board diversity",
         "public media",
         "community media",
         "ethnic media",
@@ -13,7 +15,7 @@
   },
   {
     "slug": "journEd",
-    "title": "education",
+    "title": "journalism education",
     "interventions": [
         "high school curriculum",
         "college curriculum",
@@ -38,8 +40,8 @@
     ]
   },
   {
-    "slug": "culture",
-    "title": "culture",
+    "slug": "retention",
+    "title": "retention and culture",
     "interventions": [
         "promotion",
         "support external networking",
@@ -49,10 +51,25 @@
         "employee peer groups",
         "mentorship programs",
         "robust HR policies",
-        "external accountability",
-        "board diversity",
-        "leadership by women/POC"
+        "external accountability"
     ]
+  },
+  {
+    "slug": "sourcing",
+    "title": "inclusion in sourcing",
+    "interventions": [
+        "by race",
+        "by ethnicity",
+        "by gender",
+        "by sexual orientation",
+        "by faith group",
+        "by nationality",
+        "by language group",
+        "by class",
+        "by neighborhood or region",
+        "by age",
+        "by ability"
+      ]
   },
   {
     "slug": "coverage",
@@ -63,13 +80,12 @@
         "story selection",
         "tone/voice/style",
         "fighting stereotypes",
-        "solutions journalism",
-        "inclusion in sourcing"
+        "solutions journalism"
       ]
   },
   {
     "slug": "engagement",
-    "title": "engagement",
+    "title": "audience engagement",
     "interventions": [
         "during story selection",
         "over course of reporting",

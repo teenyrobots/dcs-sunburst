@@ -262,7 +262,6 @@ function sunburst(id){
       }
 
 //MAKE INNER PIE
-
   //this is the opposite land data that you can reference to get info about
   //current intervention, but I did a bad job of matching up the key names to
   //the original data structure bc I was hacking :(
