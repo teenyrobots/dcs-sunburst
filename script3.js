@@ -122,16 +122,16 @@ let colors8 = [
 ]
 
 let colors = [
-  "106, 164, 208",
+  "144, 177, 203",
   "177, 186, 195",
   "175, 212, 241",
-  "106, 164, 208",
+  "144, 177, 203",
   "177, 186, 195",
   "175, 212, 241",
-  "106, 164, 208",
+  "144, 177, 203",
   "177, 186, 195",
   "175, 212, 241",
-  "106, 164, 208",
+  "144, 177, 203",
   "177, 186, 195",
   "175, 212, 241"
 ]
@@ -351,14 +351,31 @@ function sunburst(id){
       function angleInner(d, i) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
 
+    // //THIS WORKS, BUT IT'S HONESTLY A PRETTY BOGUS SOLUTION
+    //     if (dataOpp[i+1] === undefined) {
+    //       return a;
+    //     } else {
+    //       if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
+    //         a = a-180;
+    //         return a;
+    //       } else if (a > 100) {
+    //         a = a-180;
+    //         return a;
+    //       } else {
+    //         return a;
+    //       }
+    //     }
+    //   }
+
     //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT IT'S HONESTLY A PRETTY BOGUS SOLUTION
         if (dataOpp[i+1] === undefined) {
           return a;
         } else {
-          if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
-            a = a-180;
-            return a;
-          } else if (a > 100) {
+          // if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
+          //   a = a-180;
+          //   return a;
+          // } else
+          if (a > 101) {
             a = a-180;
             return a;
           } else {
@@ -366,4 +383,5 @@ function sunburst(id){
           }
         }
       }
+
 }

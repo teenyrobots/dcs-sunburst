@@ -20,6 +20,7 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   width: 100%;
@@ -40,18 +41,18 @@ svg {
 } */
 
 .center {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   position: absolute;
-  left: 375px;
-  top: 375px;
+  left: 350px;
+  top: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .center * {
-  width: 250px;
+  width: 300px;
 }
 
 #intialContent {
@@ -70,6 +71,7 @@ svg {
 .title {
   margin: .5em 0;
   text-transform: capitalize;
+  color:  #f0142c;
 }
 
 #ex {
@@ -98,7 +100,7 @@ svg {
 }
 
 .linkish {
-  color: blue;
+  color: #2a8ad2;
   text-decoration: underline;
   text-align: right;
   font-size: .75em;
@@ -109,7 +111,7 @@ svg {
 }
 
 .selected {
-  fill: #fc5252;
+  fill: #ff6f6f;
 }
 
 .labels {
