@@ -1,7 +1,7 @@
 // SOLUTIONS MATRIX D3 SUNBURST EDITION
 
 //This fuction generates THE viz on index.html
-d3.json("data.json", function(data) {
+d3.json("data-ex-test.json", function(data) {
   theData = data;
   sunburst("#sunburstViz");
 });
@@ -165,9 +165,13 @@ function sunburst(id){
           d3.select("#content").style("display", "flex");
           let title = d3.selectAll('.title');
           let cat = d3.selectAll('.cat');
+          let ex = d3.selectAll('.examples');
 
-          title.text(dataOpp[i].int);
+          title.text(dataOpp[i].int.name);
           cat.text(dataOpp[i].cat);
+          ex.selectAll("li").remove();
+          ex.append("li").text(dataOpp[i].int.examples);
+          console.log(dataOpp[i].int.examples);
 
           d3.selectAll(".path").classed("selected", false);
           d3.select(this).classed("selected", true);
@@ -196,7 +200,6 @@ function sunburst(id){
         if (dataOpp[i+1] === undefined) {
           return a-180;
         } else {
-          console.log(dataOpp[i].int, a);
           if (a > 110) {
             a = a-180;
             return a;
