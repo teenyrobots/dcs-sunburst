@@ -1,22 +1,18 @@
 [
   {
+    "slug": "ownership",
     "title": "business models",
     "interventions": [
+        "investor diversity",
         "public media",
         "community media",
         "ethnic media",
-        "hybrid models"
-    ]
-  },
-  {
-    "title": "revenue",
-    "interventions": [
         "crowdfunding",
-        "investor diversity",
         "incubators/accelerators"
     ]
   },
   {
+    "slug": "journEd",
     "title": "education",
     "interventions": [
         "high school curriculum",
@@ -28,6 +24,7 @@
     ]
   },
   {
+    "slug": "hiring",
     "title": "hiring",
     "interventions": [
         "internships",
@@ -36,24 +33,25 @@
         "freelancers",
         "editorial staff",
         "management",
+        "role dedicated to DEI",
         "inclusive hiring practices"
     ]
   },
   {
+    "slug": "culture",
     "title": "culture",
     "interventions": [
-        "diverse leadership",
-        "board diversity",
         "promotion",
-        "external networking",
-        "cultural expression",
+        "support external networking",
+        "support cultural expression",
         "regular DEI trainings",
+        "support from leadership",
         "employee peer groups",
         "mentorship programs",
         "robust HR policies",
         "external accountability",
-        "role dedicated to DEI",
-        "harrassment protections"
+        "board diversity",
+        "leadership by women/POC"
     ]
   },
   {
@@ -62,33 +60,39 @@
     "interventions": [
         "range of beats",
         "prominance of beats",
-        "inclusion in sourcing",
         "story selection",
         "tone/voice/style",
         "fighting stereotypes",
-        "solutions journalism"
+        "solutions journalism",
+        "inclusion in sourcing"
       ]
   },
   {
+    "slug": "engagement",
     "title": "engagement",
     "interventions": [
+        "during story selection",
         "over course of reporting",
         "responses (comments, etc.)",
         "events",
         "crowdsourcing",
-        "media production trainings"
+        "media production trainings",
+        "harrassment protections"
       ]
   },
   {
+    "slug": "innovation",
     "title": "innovation",
     "interventions": [
         "reaching diverse audiences",
         "reflecting diverse audiences",
         "agency through interactions",
-        "emerging platforms"
+        "new business models",
+        "from underrepresented groups"
       ]
   },
   {
+    "slug": "distribution",
     "title": "distribution",
     "interventions": [
         "underserved demographics",
@@ -98,6 +102,7 @@
       ]
   },
   {
+    "slug": "partnerships",
     "title": "partnerships",
     "interventions": [
         "community groups",
@@ -110,16 +115,18 @@
       ]
   },
   {
+    "slug": "evaluation",
     "title": "evaluation",
     "interventions": [
         "diversity",
-        "inclusion",
+        "measuring inclusion",
         "influence",
         "sentiment",
         "social impact outcomes"
       ]
   },
   {
+    "slug": "industry",
     "title": "larger industry",
     "interventions": [
         "industry standards",

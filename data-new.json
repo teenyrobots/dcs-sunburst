@@ -2,10 +2,12 @@
   {
     "title": "business models",
     "interventions": [
+        "investor diversity",
         "public media",
         "community media",
         "ethnic media",
-        "hybrid models"
+        "crowdfunding",
+        "incubators/accelerators"
     ]
   },
   {
@@ -36,47 +38,48 @@
         "freelancers",
         "editorial staff",
         "management",
+        "role dedicated to DEI",
         "inclusive hiring practices"
     ]
   },
   {
     "title": "culture",
     "interventions": [
-        "diverse leadership",
-        "board diversity",
         "promotion",
-        "external networking",
-        "cultural expression",
+        "support external networking",
+        "support cultural expression",
         "regular DEI trainings",
+        "support from leadership",
         "employee peer groups",
         "mentorship programs",
         "robust HR policies",
         "external accountability",
-        "role dedicated to DEI",
-        "harrassment protections"
+        "board diversity",
+        "leadership by women/POC"
     ]
   },
   {
-    "slug": "coverage",
     "title": "coverage",
     "interventions": [
         "range of beats",
         "prominance of beats",
-        "inclusion in sourcing",
         "story selection",
         "tone/voice/style",
         "fighting stereotypes",
-        "solutions journalism"
+        "solutions journalism",
+        "inclusion in sourcing"
       ]
   },
   {
     "title": "engagement",
     "interventions": [
+        "during story selection",
         "over course of reporting",
         "responses (comments, etc.)",
         "events",
         "crowdsourcing",
-        "media production trainings"
+        "media production trainings",
+        "harrassment protections"
       ]
   },
   {
@@ -85,7 +88,8 @@
         "reaching diverse audiences",
         "reflecting diverse audiences",
         "agency through interactions",
-        "emerging platforms"
+        "new business models",
+        "from underrepresented groups"
       ]
   },
   {
@@ -113,7 +117,7 @@
     "title": "evaluation",
     "interventions": [
         "diversity",
-        "inclusion",
+        "measuring inclusion",
         "influence",
         "sentiment",
         "social impact outcomes"

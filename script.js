@@ -1,185 +1,31 @@
 // SOLUTIONS MATRIX D3 SUNBURST EDITION
 
-// colors
-let colors1 = [
-  "67, 57, 149",
-  "114, 17, 48",
-  "0, 151, 207",
-  "113, 137, 66",
-  "102, 56, 240",
-  "255, 169, 0",
-  "31, 8, 151",
-  "212, 21, 134",
-  "0, 184, 141",
-  "255, 102, 77",
-  "27, 1, 71",
-  "131, 186, 18"
-]
-
-let colors3 = [
-  "222, 170, 33",
-  "225, 162, 49",
-  "228, 154, 63",
-  "231, 145, 74",
-  "233, 137, 86",
-  "236, 129, 97",
-  "239, 120, 108",
-  "241, 113, 118",
-  "244, 104, 128",
-  "247, 96, 139",
-  "249, 87, 150",
-  "250, 82, 159"
-]
-
-let colors4 = [
-  "7, 147, 124",
-  "36, 72, 64",
-  "0, 88, 186",
-  "0, 32, 67",
-  "58, 98, 120",
-  "24, 48, 59",
-  "7, 147, 124",
-  "36, 72, 64",
-  "0, 88, 186",
-  "0, 32, 67",
-  "58, 98, 120",
-  "24, 48, 59"
-]
-
-let colors2 = [
-  "7, 146, 123",
-  "31, 74, 66",
-  "14, 125, 147",
-  "33, 66, 74",
-  "20, 79, 147",
-  "33, 53, 75",
-  "24, 34, 148",
-  "34, 38, 75",
-  "98, 16, 148",
-  "57, 33, 75",
-  "148, 20, 115",
-  "75, 33, 63"
-]
-
-let colors5 = [
-  "89, 89, 89",
-  "37, 100, 163",
-  "89, 89, 89",
-  "37, 100, 163",
-  "89, 89, 89",
-  "37, 100, 163",
-  "89, 89, 89",
-  "37, 100, 163",
-  "89, 89, 89",
-  "37, 100, 163",
-  "89, 89, 89",
-  "37, 100, 163",
-]
-
-let colors6 = [
-  "226, 222, 196",
-  "177, 159, 104",
-  "226, 222, 196",
-  "177, 159, 104",
-  "226, 222, 196",
-  "177, 159, 104",
-  "226, 222, 196",
-  "177, 159, 104",
-  "226, 222, 196",
-  "177, 159, 104",
-  "226, 222, 196",
-  "177, 159, 104",
-]
-
-let colors7 = [
-  "150, 163, 167",
-  "204, 214, 218",
-  "150, 163, 167",
-  "204, 214, 218",
-  "150, 163, 167",
-  "204, 214, 218",
-  "150, 163, 167",
-  "204, 214, 218",
-  "150, 163, 167",
-  "204, 214, 218",
-  "150, 163, 167",
-  "204, 214, 218",
-]
-
-let colors8 = [
-  "135, 163, 185",
-  "128, 128, 128",
-  "42, 138, 210",
-  "135, 163, 185",
-  "128, 128, 128",
-  "42, 138, 210",
-  "135, 163, 185",
-  "128, 128, 128",
-  "42, 138, 210",
-  "135, 163, 185",
-  "128, 128, 128",
-  "42, 138, 210"
-]
-
-let colors9 = [
-  "144, 177, 203",
-  "177, 186, 195",
-  "175, 212, 241",
-  "144, 177, 203",
-  "177, 186, 195",
-  "175, 212, 241",
-  "144, 177, 203",
-  "177, 186, 195",
-  "175, 212, 241",
-  "144, 177, 203",
-  "177, 186, 195",
-  "175, 212, 241"
-]
-
-let colors = [
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-]
-
-// this function takes the data and ports it into the function that generates the viz
+//This fuction generates THE viz on index.html
 d3.json("data.json", function(data) {
   theData = data;
   sunburst("#sunburstViz");
 });
 
-// helper functions
-function arrayify(theData) {
-  let newArray = [];
-  for (var i in theData) {
-    let newDatum = theData[i].interventions.length;
-    newArray.push(newDatum);
-  }
-  return newArray;
-}
+//-------------------------------------------------
+//Here are some helper functions for sunburst generation
 
-function innerArrayContent(theData) {
-  let newArray = [];
-  for (var i in theData) {
-    for (j in theData[i].interventions) {
-      let newDatum = theData[i].interventions[j];
-      newArray.push(newDatum);
-    }
-  }
-  return newArray;
-};
+let colors = [
+  "211, 228, 241",
+  "226, 240, 251",
+  "197, 215, 229",
+  "211, 228, 241",
+  "226, 240, 251",
+  "197, 215, 229",
+  "211, 228, 241",
+  "226, 240, 251",
+  "197, 215, 229",
+  "211, 228, 241",
+  "226, 240, 251",
+  "197, 215, 229",
+  "211, 228, 241",
+  "226, 240, 251",
+  "197, 215, 229"
+]
 
 function innerArrayContentOpp(theData) {
   let newArray = [];
@@ -212,17 +58,19 @@ function exBye() {
   document.getElementById('ex').setAttribute("style", "display: none;");
 }
 
-// HERE'S THE SUNBURST GENERATOR
+//---------------------------------------------------------------------
+//This is the D3 function that actually generates sunbursts
+
 function sunburst(id){
 
-  // bostock's margin convention leaves room for scales and stuff
+  // bostock's margin convention leaves room for scales
   let margin = {top: 50, right: 50, bottom: 10, left: 50};
 
-  // this will be the size of the viz
+  //FINAL SIZE OF VIZ
   let w = 1000 - margin.left - margin.right;
   let h = 1000  - margin.top - margin.bottom;
 
-  // circle stuff
+  //MAKES CIRCLES
   let outerRadius = w * .5,
 	 innerRadius = h * .425,
    arc = d3.arc()
@@ -238,7 +86,7 @@ function sunburst(id){
    let lilPie = d3.pie()
      .sort(null);
 
-  // this is the svg the viz will be inside
+  //THE MAIN SVG
   let svg = d3.select(id).append("svg")
     .attr("width", w + margin.left + margin.right)
     .attr("height", h + margin.top + margin.bottom)
@@ -258,32 +106,7 @@ function sunburst(id){
     })
     .attr("d", arc);
 
-
-//-----------
-// THIS ONE I'M TRYING TO MAKE WORK
-
-// let textArcs = svg.selectAll("g.arc")
-//   .append("text")
-//     .attr("d", arc)
-//     .attr("stroke", "red")
-//     .attr("transform", "translate("+ outerRadius + "," + outerRadius +")");
-//
-//     textArcs.append("textPath")
-//       .attr("transform", function(d) {
-//         let c = arc.centroid(d);
-//         return "translate(" + c[0] +"," + c[1] + ")rotate(" + angleOuter(d) + ")";
-//       })
-//       .attr("text-anchor", "middle")
-//       .text(function(d, i){
-//           let a = theData[i].title;
-//           return a; //get the label from our original data array
-//       });
-//         // .classed("labels", true)
-
-
-//------------
-
-//THIS ONE WORKS BUT IS NOT ON A PATH
+//WRITES THE OUTER LABELS
   arcs.append("text")
     .attr("transform", function(d) {
       let c = arc.centroid(d);
@@ -369,31 +192,12 @@ function sunburst(id){
       function angleInner(d, i) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
 
-    // //THIS WORKS, BUT IT'S HONESTLY A PRETTY BOGUS SOLUTION
-    //     if (dataOpp[i+1] === undefined) {
-    //       return a;
-    //     } else {
-    //       if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
-    //         a = a-180;
-    //         return a;
-    //       } else if (a > 100) {
-    //         a = a-180;
-    //         return a;
-    //       } else {
-    //         return a;
-    //       }
-    //     }
-    //   }
-
-    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT IT'S HONESTLY A PRETTY BOGUS SOLUTION
+    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT IT'S HONESTLY PRETTY BOGUS
         if (dataOpp[i+1] === undefined) {
-          return a;
+          return a-180;
         } else {
-          // if (a > 90 && dataOpp[i+1].cat === dataOpp[i].cat) {
-          //   a = a-180;
-          //   return a;
-          // } else
-          if (a > 101) {
+          console.log(dataOpp[i].int, a);
+          if (a > 110) {
             a = a-180;
             return a;
           } else {

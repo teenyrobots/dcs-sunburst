@@ -1,11 +1,16 @@
 [
   {
     "slug": "ownership",
-    "title": "ownership or stewardship of outlet",
+    "title": "business models",
     "interventions": [
-        "ownership by women/POC",
-        "investor diversity",
-        "board diversity",
+        {
+        "int": "investor diversity",
+        "examples": [
+          "example",
+          "another example",
+          "example 3"
+          ]
+        },
         "public media",
         "community media",
         "ethnic media",
@@ -15,7 +20,7 @@
   },
   {
     "slug": "journEd",
-    "title": "journalism education",
+    "title": "education",
     "interventions": [
         "high school curriculum",
         "college curriculum",
@@ -40,8 +45,8 @@
     ]
   },
   {
-    "slug": "retention",
-    "title": "retention and culture",
+    "slug": "culture",
+    "title": "culture",
     "interventions": [
         "promotion",
         "support external networking",
@@ -51,25 +56,10 @@
         "employee peer groups",
         "mentorship programs",
         "robust HR policies",
-        "external accountability"
+        "external accountability",
+        "board diversity",
+        "leadership by women/POC"
     ]
-  },
-  {
-    "slug": "sourcing",
-    "title": "inclusion in sourcing",
-    "interventions": [
-        "by race",
-        "by ethnicity",
-        "by gender",
-        "by sexual orientation",
-        "by faith group",
-        "by nationality",
-        "by language group",
-        "by class",
-        "by neighborhood or region",
-        "by age",
-        "by ability"
-      ]
   },
   {
     "slug": "coverage",
@@ -80,12 +70,13 @@
         "story selection",
         "tone/voice/style",
         "fighting stereotypes",
-        "solutions journalism"
+        "solutions journalism",
+        "inclusion in sourcing"
       ]
   },
   {
     "slug": "engagement",
-    "title": "audience engagement",
+    "title": "engagement",
     "interventions": [
         "during story selection",
         "over course of reporting",
