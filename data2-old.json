@@ -2,14 +2,7 @@
   {
     "title": "business models",
     "interventions": [
-        {
-        "name": "public media",
-        "examples": [
-          "example",
-          "another example",
-          "example 3"
-          ]
-        },
+        "public media",
         "community media",
         "ethnic media",
         "hybrid models"

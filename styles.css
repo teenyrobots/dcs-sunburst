@@ -99,6 +99,10 @@ svg {
   box-shadow: 5px 10px 8px rgba(0,0,0, .5);
 }
 
+.examples p {
+  margin: 0;
+}
+
 .linkish {
   color: #2a8ad2;
   text-decoration: underline;

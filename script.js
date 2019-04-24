@@ -1,7 +1,7 @@
 // SOLUTIONS MATRIX D3 SUNBURST EDITION
 
 //This fuction generates THE viz on index.html
-d3.json("data-ex-test.json", function(data) {
+d3.json("data.json", function(data) {
   theData = data;
   sunburst("#sunburstViz");
 });
@@ -165,13 +165,28 @@ function sunburst(id){
           d3.select("#content").style("display", "flex");
           let title = d3.selectAll('.title');
           let cat = d3.selectAll('.cat');
+          let short = d3.selectAll('.short');
           let ex = d3.selectAll('.examples');
+          let descrip = d3.selectAll('.descrip');
 
           title.text(dataOpp[i].int.name);
           cat.text(dataOpp[i].cat);
+          short.text(dataOpp[i].int.short);
+          descrip.text(dataOpp[i].int.description);
           ex.selectAll("li").remove();
-          ex.append("li").text(dataOpp[i].int.examples);
-          console.log(dataOpp[i].int.examples);
+          for (z in dataOpp[i].int.examples) {
+            if (dataOpp[i].int.examples[z].url) {
+              ex.append("li")
+                .append("a")
+                  .text(dataOpp[i].int.examples[z].text)
+                  .attr("href", dataOpp[i].int.examples[z].url)
+                  .attr("target", "_blank");
+            } else {
+              ex.append("li")
+                .append("p")
+                  .text(dataOpp[i].int.examples[z].text);
+            }
+          };
 
           d3.selectAll(".path").classed("selected", false);
           d3.select(this).classed("selected", true);
@@ -185,7 +200,7 @@ function sunburst(id){
       .attr("text-anchor", "middle") //center the text on it's origin
       .text(function(d, i)
         {
-          let a = dataOpp[i].int;
+          let a = dataOpp[i].int.name;
           return a; //get the label from our original data array
         }
       )
