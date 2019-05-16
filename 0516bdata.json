@@ -509,16 +509,6 @@
           ]
         },
         {
-        "name": "sentiment",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
         "name": "social impact outcomes",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
