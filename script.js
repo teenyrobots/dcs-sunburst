@@ -211,11 +211,12 @@ function sunburst(id){
       function angleInner(d, i) {
         let a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
 
-    //THIS TRIES TO CONSIDER NEXT DATA IN FLIPPING EQUATION, BUT IT'S HONESTLY PRETTY BOGUS
+    //This flips the left side of the sunburst based on the current dataset
+    //Ideally it would flip entire categories after 90 degrees, but it is not automatic
         if (dataOpp[i+1] === undefined) {
           return a-180;
         } else {
-          if (a > 110) {
+          if (a > 95) {
             a = a-180;
             return a;
           } else {
