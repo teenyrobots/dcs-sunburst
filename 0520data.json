@@ -1,9 +1,9 @@
 [
   {
-    "title": "funding",
+    "title": "Funding",
     "interventions": [
         {
-        "name": "crowdfunding",
+        "name": "Crowdfunding",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -13,7 +13,17 @@
           ]
         },
         {
-        "name": "investor diversity",
+        "name": "Investor Diversity",
+        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
+        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
+        "examples": [
+          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
+          {"url":"https://www.wikipedia.org/", "text":"another example"},
+          {"url":"https://www.wikipedia.org/", "text":"example 3"}
+          ]
+        },
+        {
+        "name": "Grants",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -25,10 +35,10 @@
     ]
   },
   {
-    "title": "education",
+    "title": "Education/Development",
     "interventions": [
         {
-        "name": "high school curriculum",
+        "name": "High School",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -38,7 +48,7 @@
           ]
         },
         {
-        "name": "college curriculum",
+        "name": "College",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -48,7 +58,7 @@
           ]
         },
         {
-        "name": "scholarships",
+        "name": "Scholarships",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -58,7 +68,7 @@
           ]
         },
         {
-        "name": "mid-career programs",
+        "name": "Fellowships",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -68,7 +78,7 @@
           ]
         },
         {
-        "name": "fellowships",
+        "name": "Mid-career",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -78,7 +88,7 @@
           ]
         },
         {
-        "name": "executive training",
+        "name": "Executive",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -88,7 +98,7 @@
           ]
         },
         {
-        "name": "incubators/accelerators",
+        "name": "Incubators/Accelerators",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -100,10 +110,10 @@
     ]
   },
   {
-    "title": "hiring",
+    "title": "Hiring",
     "interventions": [
         {
-        "name": "early pipeline",
+        "name": "Early Pipeline",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -113,7 +123,7 @@
           ]
         },
         {
-        "name": "recruitment",
+        "name": "Recruitment",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -123,7 +133,7 @@
           ]
         },
         {
-        "name": "inclusive hiring practices",
+        "name": "Hiring Practices",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -135,10 +145,10 @@
     ]
   },
   {
-    "title": "culture",
+    "title": "Culture",
     "interventions": [
         {
-        "name": "diverse leadership",
+        "name": "Leadership",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -148,7 +158,7 @@
           ]
         },
         {
-        "name": "board diversity",
+        "name": "DEI-focused roles",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -158,7 +168,7 @@
           ]
         },
         {
-        "name": "promotion",
+        "name": "Human resources policies",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -168,7 +178,7 @@
           ]
         },
         {
-        "name": "regular DEI trainings",
+        "name": "Mentorship and peer groups",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -178,7 +188,7 @@
           ]
         },
         {
-        "name": "employee peer groups",
+        "name": "DEI trainings",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -188,37 +198,7 @@
           ]
         },
         {
-        "name": "mentorship programs",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "robust HR policies",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "external accountability",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "role dedicated to DEI",
+        "name": "External accountability",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -230,11 +210,11 @@
     ]
   },
   {
-    "slug": "coverage",
+    "slug": "Coverage",
     "title": "coverage",
     "interventions": [
         {
-        "name": "range of beats",
+        "name": "Topics/beats",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -244,7 +224,7 @@
           ]
         },
         {
-        "name": "prominance of beats",
+        "name": "Sourcing",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -254,7 +234,7 @@
           ]
         },
         {
-        "name": "inclusion in sourcing",
+        "name": "Tone/voice/style",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -264,17 +244,7 @@
           ]
         },
         {
-        "name": "tone/voice/style",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "solutions journalism",
+        "name": "Solutions Journalism",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -286,10 +256,10 @@
       ]
   },
   {
-    "title": "engagement",
+    "title": "Engagement",
     "interventions": [
         {
-        "name": "responses (comments, etc.)",
+        "name": "Audience-driven reporting",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -299,7 +269,7 @@
           ]
         },
         {
-        "name": "events",
+        "name": "Community partnerships",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -309,7 +279,7 @@
           ]
         },
         {
-        "name": "crowdsourcing",
+        "name": "Events",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -319,7 +289,17 @@
           ]
         },
         {
-        "name": "media production trainings",
+        "name": "Media production training",
+        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
+        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
+        "examples": [
+          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
+          {"url":"https://www.wikipedia.org/", "text":"another example"},
+          {"url":"https://www.wikipedia.org/", "text":"example 3"}
+          ]
+        },
+        {
+        "name": "Crowdsourcing",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -331,10 +311,10 @@
       ]
   },
   {
-    "title": "innovation",
+    "title": "Distribution",
     "interventions": [
         {
-        "name": "new storytelling methods",
+        "name": "Outreach strategies",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -344,7 +324,7 @@
           ]
         },
         {
-        "name": "new editorial processes",
+        "name": "Cross-publication/syndication",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -354,7 +334,7 @@
           ]
         },
         {
-        "name": "new business models",
+        "name": "Additional languages",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -364,7 +344,7 @@
           ]
         },
         {
-        "name": "emerging platforms",
+        "name": "Lower literacy options",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -376,10 +356,10 @@
       ]
   },
   {
-    "title": "distribution",
+    "title": "Innovation",
     "interventions": [
         {
-        "name": "underserved demographics",
+        "name": "New platforms",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -389,7 +369,7 @@
           ]
         },
         {
-        "name": "selected regions",
+        "name": "New modes of storytelling",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -399,7 +379,7 @@
           ]
         },
         {
-        "name": "additional language groups",
+        "name": "New business models",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -409,7 +389,7 @@
           ]
         },
         {
-        "name": "lower literacy audiences",
+        "name": "Collaborative reporting",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -421,10 +401,10 @@
       ]
   },
   {
-    "title": "partnerships",
+    "title": "Evaluation",
     "interventions": [
         {
-        "name": "community groups",
+        "name": "Equity in evaluation",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -434,7 +414,7 @@
           ]
         },
         {
-        "name": "outlets with diverse audiences",
+        "name": "Demographic data",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -444,27 +424,7 @@
           ]
         },
         {
-        "name": "faith organizations",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "educational organizations",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "cultural organizations",
+        "name": "Social impact outcomes",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -476,10 +436,10 @@
       ]
   },
   {
-    "title": "evaluation",
+    "title": "Larger Industry",
     "interventions": [
         {
-        "name": "equitable frameworks",
+        "name": "Industry standards",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -489,7 +449,7 @@
           ]
         },
         {
-        "name": "diversity metrics",
+        "name": "Professional organizations",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
@@ -499,52 +459,7 @@
           ]
         },
         {
-        "name": "social impact outcomes",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "social impact outcomes",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        }
-      ]
-  },
-  {
-    "title": "larger industry",
-    "interventions": [
-        {
-        "name": "industry standards",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "professional organizations",
-        "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
-        "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
-        "examples": [
-          {"url":"https://www.wikipedia.org/", "text":"wikipedia dot org"},
-          {"url":"https://www.wikipedia.org/", "text":"another example"},
-          {"url":"https://www.wikipedia.org/", "text":"example 3"}
-          ]
-        },
-        {
-        "name": "awards",
+        "name": "Awards",
         "short": "You can put a short description here if you like, 25 words or fewer (this right here is twenty words).",
         "description": "Here is some copy about this intervention. Let me know if this isn't enough room for all the text you want to use. This can be fairly long, but if this whole box gets bigger than the sunburst it gets a little weird.",
         "examples": [
