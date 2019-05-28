@@ -150,3 +150,8 @@ footer {
   background: lightgrey;
   color: white;
 }
+
+footer p {
+  color: black;
+  font-size: .75em;
+}
