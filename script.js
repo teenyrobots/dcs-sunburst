@@ -77,7 +77,7 @@ function sunburst(id){
     .innerRadius(innerRadius)
     .outerRadius(outerRadius),
   innerArc = d3.arc()
-     .innerRadius(innerRadius * .45)
+     .innerRadius(innerRadius * .5)
      .outerRadius(outerRadius * .9);
 
   let bigPie = d3.pie()
