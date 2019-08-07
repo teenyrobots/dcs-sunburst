@@ -1,6 +1,7 @@
 [
   {
     "title": "Funding",
+    "descrip": "While grants are the lifeblood of DEI in journalism, there are also opportunities to raise funds through crowdfunding, and through private investment focused on and/or led by women and people of color.",
     "interventions": [
         {
         "name": "Crowdfunding",
@@ -42,6 +43,7 @@
   },
   {
     "title": "Education/Training",
+    "descrip": "Educational opportunities for journalists of all levels—from high school to executive—help journalists from diverse backgrounds gain skills and provide opportunities for covering important issues.",
     "interventions": [
         {
         "name": "High School",
@@ -102,6 +104,7 @@
   },
   {
     "title": "Culture",
+    "descrip": "Journalism organizations can increase DEI by changing how they run early pipeline opportunities, restructuring hiring practices, and actively creating cultures in which all employees can flourish. This includes a culture with leadership and board diversity, robust human resources policies, external accountability, and more.",
     "interventions": [
         {
         "name": "Leadership",
@@ -173,6 +176,7 @@
   },
   {
     "title": "Coverage",
+    "descrip": "News outlets—from mainstream organizations to smaller outlets focused on specific communities— can better serve audiences by focusing on relevant topics, using diverse voices in sourcing, following best practices for tone, voice, and style, and using coverage to advance solutions.",
     "interventions": [
         {
         "name": "Topics/beats",
@@ -225,6 +229,7 @@
   },
   {
     "title": "Engagement",
+    "descrip": "Engaged journalism practices, which put the community at the center of reporting, can help raise voices that are not always heard. Engagement can include a series of practices that put the audience first, community partnerships, events, media training, and crowdsourcing.",
     "interventions": [
         {
         "name": "Audience-driven reporting",
@@ -274,6 +279,7 @@
   },
   {
     "title": "Distribution",
+    "descrip": "Distribution is key to reaching new audiences, physically and digitally. This includes specific demographic groups and regions, additional language groups, and lower literacy groups and can be achieved through targeted outreach and syndication.",
     "interventions": [
         {
         "name": "Targeted outreach",
@@ -313,6 +319,7 @@
   },
   {
     "title": "Innovation",
+    "descrip": "Innovative practices in journalism are breaking down traditional barriers and gatekeepers with new platforms, new storytelling methods, new editorial processes such as collaborative reporting and new business models.",
     "interventions": [
         {
         "name": "New platforms",
@@ -345,6 +352,7 @@
   },
   {
     "title": "Evaluation",
+    "descrip": "Evaluating DEI in journalism projects goes beyond counting up the people involved. Equity in evaluation is a specific framework. While diversity metrics have their place, it’s also important to measure social impact outcomes.",
     "interventions": [
         {
         "name": "Equitable frameworks",
@@ -376,6 +384,7 @@
   },
   {
     "title": "Larger Industry",
+    "descrip": "The larger industry can support DEI within journalism through the adoption of industry standards, including best practices and sample guidelines and policies; professional organizations, and through recognizing accomplishments through awards.",
     "interventions": [
         {
         "name": "Industry standards",

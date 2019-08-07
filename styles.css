@@ -1,6 +1,6 @@
 /*styles for TK project*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i,900,900i');
 
 * {
   box-sizing: border-box;
@@ -21,24 +21,32 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #f0142c;
+  font-weight: 900;
+  margin: 1rem auto;
+}
+
+h2.intro {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  width: 100%;
-  max-width: 1000px;
+  width: 95%;
+  max-width: 95vh;
   display: block;
-  margin: auto;
+  margin: 2.5vh auto;
 }
 
 #sunburstViz {
-  /* background-color: pink; */
   position: relative;
-  /* max-width: 100%; lol */
+  width: 100%;
 }
-
-/* lol
-svg {
-  max-width: 100%;
-} */
 
 .linkish {
   color: #2a8ad2;
@@ -61,19 +69,21 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 .center {
-  width: 300px;
-  height: 200px;
+  width: 35%;
+  height: 35%;
   position: absolute;
-  left: 350px;
-  top: 400px;
+  left: 32.5%;
+  top: 32.5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  zoom: 1;
+  -moz-transform: scale(1);
 }
 
-.center * {
-  width: 300px;
-}
+/* .center * {
+  width: 100;
+} */
 
 #intialContent {
   text-align: center;
@@ -93,12 +103,15 @@ a:hover, a:active, .linkish:hover, .linkish:active {
   color:  #f0142c;
 }
 
+.outerTitle {
+  color: white;
+  background-color: #f0142c;
+  padding: .25rem;
+}
+
 #ex {
   position: absolute;
   margin: auto;
-  /* top: 25px;
-  left: 25px; */
-  /* display: flex; */
   align-items: center;
   width: 95%;
   height: 95%;
@@ -109,6 +122,7 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 #ex div {
+  position: relative;
   border: solid 1px black;
   background-color: white;
   padding: 1em;
@@ -122,14 +136,20 @@ a:hover, a:active, .linkish:hover, .linkish:active {
   margin: 0;
 }
 
-
-
 .orange {
   fill: #f0142c;
 }
 
+.orange + text {
+  fill: white;
+}
+
 .selected {
   fill: #ff6f6f;
+}
+
+.selected + text {
+  fill: white;
 }
 
 .labels {
@@ -139,13 +159,18 @@ a:hover, a:active, .linkish:hover, .linkish:active {
   font-weight: 300;
 }
 
+.no {
+  display: none;
+}
+
+
 p {
   font-size: 1em;
 }
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
+  padding: 1.5rem;
   text-align: center;
   background: lightgrey;
   color: white;
