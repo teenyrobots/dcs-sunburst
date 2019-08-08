@@ -64,7 +64,7 @@ function exBye() {
 function sunburst(id){
 
   // bostock's margin convention leaves room for scales
-  let margin = {top: 25, right: 25, bottom: 10, left: 25};
+  let margin = {top: 50, right: 50, bottom: 10, left: 50};
 
   //FINAL SIZE OF VIZ
   let w = 1000 - margin.left - margin.right;
