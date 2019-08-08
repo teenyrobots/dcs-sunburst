@@ -1,6 +1,6 @@
 /*styles for TK project*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i,900,900i');
 
 * {
   box-sizing: border-box;
@@ -37,15 +37,15 @@ h2.intro {
 
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  width: 1000px;
+  width: 95%;
+  max-width: 95vh;
   display: block;
-  margin: auto;
+  margin: 2.5vh auto;
 }
 
 #sunburstViz {
-  /* background-color: pink; */
   position: relative;
-  /* max-width: 100%; lol */
+  width: 100%;
 }
 
 .linkish {
@@ -69,19 +69,21 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 .center {
-  width: 300px;
-  height: 200px;
+  width: 35%;
+  height: 35%;
   position: absolute;
-  left: 350px;
-  top: 400px;
+  left: 32.5%;
+  top: 32.5%;
   display: flex;
   align-items: center;
   justify-content: center;
+  zoom: 1;
+  -moz-transform: scale(1);
 }
 
-.center * {
-  width: 300px;
-}
+/* .center * {
+  width: 100;
+} */
 
 #intialContent {
   text-align: center;
@@ -111,15 +113,16 @@ a:hover, a:active, .linkish:hover, .linkish:active {
   position: absolute;
   margin: auto;
   align-items: center;
-  width: 95vw;
-  height: 95vh;
+  width: 95%;
+  height: 95%;
   max-width: 950px;
-  margin: auto 2.5vw;
+  margin: auto 1em;
   justify-content: center;
   display: none;
 }
 
 #ex div {
+  position: relative;
   border: solid 1px black;
   background-color: white;
   padding: 1em;
@@ -166,11 +169,10 @@ p {
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   background: lightgrey;
   color: white;
-  min-width: 1000px;
 }
 
 footer p {
@@ -178,10 +180,12 @@ footer p {
   font-size: .75em;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 350px) {
+ body {
+   background-color: lightblue;
+ }
 
-  #ex {
-    position: fixed;
-  }
-
+ .center {
+   transform: scale(0.45, 0.45);
+ }
 }

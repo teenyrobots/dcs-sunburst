@@ -88,10 +88,12 @@ function sunburst(id){
 
   //THE MAIN SVG
   let svg = d3.select(id).append("svg")
-    .attr("width", w + margin.left + margin.right)
-    .attr("height", h + margin.top + margin.bottom)
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr('viewBox','0 0 '+Math.min(w,h) +' '+Math.min(w,h) )
+    .attr('preserveAspectRatio','xMinYMin')
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+//    .attr("transform", "translate(" + Math.min(w,h) / 2 + "," + Math.min(w,h) / 2 + ")");
 
   let arcs = svg.selectAll("g.arc")
     .data(bigPie(theData))
@@ -125,7 +127,7 @@ function sunburst(id){
 
         title.text(theData[i].title);
         title.classed('outerTitle', true);
-        cat.text('category');
+        cat.attr('hidden', true);
         short.text(theData[i].descrip);
         descrip.text(dataOpp[i].int.description);
         ex.selectAll("li").remove();
@@ -202,6 +204,7 @@ function sunburst(id){
 
           title.text(dataOpp[i].int.name);
           title.classed('outerTitle', false);
+          cat.attr('hidden', null);
           cat.text(dataOpp[i].cat);
           short.text(dataOpp[i].int.short);
           descrip.text(dataOpp[i].int.description);

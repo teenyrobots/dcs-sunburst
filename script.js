@@ -64,7 +64,7 @@ function exBye() {
 function sunburst(id){
 
   // bostock's margin convention leaves room for scales
-  let margin = {top: 50, right: 50, bottom: 10, left: 50};
+  let margin = {top: 25, right: 25, bottom: 10, left: 25};
 
   //FINAL SIZE OF VIZ
   let w = 1000 - margin.left - margin.right;
@@ -88,12 +88,10 @@ function sunburst(id){
 
   //THE MAIN SVG
   let svg = d3.select(id).append("svg")
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr('viewBox','0 0 '+Math.min(w,h) +' '+Math.min(w,h) )
-    .attr('preserveAspectRatio','xMinYMin')
+    .attr("width", w + margin.left + margin.right)
+    .attr("height", h + margin.top + margin.bottom)
     .append("g")
-//    .attr("transform", "translate(" + Math.min(w,h) / 2 + "," + Math.min(w,h) / 2 + ")");
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
   let arcs = svg.selectAll("g.arc")
     .data(bigPie(theData))
