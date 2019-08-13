@@ -6,7 +6,7 @@
         {
         "name": "Crowdfunding",
         "short": "Crowdfunding can be an important source of revenue for women and founders of color, who are less likely to receive private investment.",
-        "description": "Crowdfunding can be an important source of revenue for women and founders of color, who are less likely to receive private investment. Learn more:",
+        "description": "Crowdfunding can be an important source of revenue for women and founders of color, who are less likely to receive private investment.",
         "examples": [
           {"url":"https://www.journalism.org/2016/01/20/crowdfunded-journalism/", "text":"PEW's research on crowdfunding in journalism"}
           ]
@@ -14,7 +14,7 @@
         {
         "name": "Investor Diversity",
         "short": "Having a diverse pool of investors ensures that multiple perspectives are represented.",
-        "description": "Having a diverse pool of investors ensures that multiple perspectives are represented. The general investment landscape is not diverse, and correspondingly most of VC funding goes to white men. Most VC funding is not journalism specific, but here are general lists for entrepreneurs looking for funding for and from women, people of color, and LGBTQ people.",
+        "description": "Having a diverse pool of investors ensures that multiple perspectives are represented. The general investment landscape is not diverse, and correspondingly most of VC funding goes to white men. Most VC funding is not journalism specific, but here are general lists for entrepreneurs looking for funding for and from women, people of color, and LGBTQ folks.",
         "examples": [
           {"url":"https://www.foundersforchange.org/diverse-investors-list", "text":"Founders for Change Diverse Investors List"},
           {"url":"https://www.startupfunding.co/blog/30-top-angel-groups-venture-capital-firms-for-women-entrepreneurs", "text":"VC funds focused on women"},
@@ -27,12 +27,12 @@
         "description": "Research has shown that DEI in journalism is heavily dependent on grant funding.",
         "examples": [
           {"url":"Supporting Diversity, Equity, and Inclusion in Journalism: Trends in National Grantmaking", "text":"Supporting Diversity, Equity, and Inclusion in Journalism: Trends in National Grantmaking"},
-          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"Find grants for individuals in the Professional Development & Training tab of the Journalism DEI Tracker"}
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"Find grants for individuals in the Journalism DEI Tracker"}
           ]
         },
         {
         "name": "Incubators/Accelerators",
-        "short": "Incubators and accelerators can help journalism entrepreneurs scale up and develop their businesses; however, these opportunities are lacking.",
+        "short": "Incubators and accellerators can help journalism entrepreneurs scale up and develop their businesses; however, these opportunities are lacking.",
         "description": "While there are many opportunities for professional development, business development opportunities are lacking.",
         "examples": [
           {"url":"https://www.aaja.org/catalyst-2018", "text":"AAJA’s Catalyst Program"},
@@ -50,15 +50,15 @@
         "short": "There are opportunities for high school students from diverse backgrounds to learn journalism skills through training programs.",
         "description": "There are opportunities for high school students from diverse backgrounds to learn journalism skills through training programs.",
         "examples": [
-          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {
         "name": "College",
-        "short": "Historically Black colleges and univeristies (HBCUs), Hispanic-serving intitutions (HSIs) and Tribal Colleges offer journalism degree programs at all levels.",
-        "description": "Historically Black colleges and univeristies (HBCUs), Hispanic-serving intitutions (HSIs) and Tribal Colleges offer journalism degree programs at all levels.",
+        "short": "HBCUs, HSIs and Tribal Colleges offer journalism degree programs at all levels.",
+        "description": "HBCUs, HSIs and Tribal Colleges offer journalism degree programs at all levels.",
         "examples": [
-         {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Higher Education tab of the Journalism DEI Tracker"}
+         {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {
@@ -66,22 +66,22 @@
         "short": "Scholarships can make a big difference to women and people of color seeking to pursue journalism careers.",
         "description": "Scholarships can make a big difference to women and people of color seeking to pursue journalism careers.",
         "examples": [
-            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {"name": "Internships",
         "short": "Journalism organizations can increase DEI by changing how they run early pipeline opportunities.",
         "description": "Historically, it’s been more difficult for people of color to score internships in the journalism industry, many of which are unpaid. But organizations and publications are making concentrated efforts to provide paid internships to candidates from diverse backgrounds.",
         "examples": [
-          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
         ]
         },
         {
         "name": "Fellowships",
-        "short": "Fellowships can help journalists gain specific expertise on pressing topics, and bring fresh perspectives to journalism coverage.",
-        "description": "Fellowships can help journalists gain specific expertise on pressing topics, and bring fresh perspectives to journalism coverage.",
+        "short": "Fellowships can help journalists gain specific expertise on pressing topics, and bring fresh perspectives to journalism institutions.",
+        "description": "Fellowships can help journalists gain specific expertise on pressing topics, and bring fresh perspectives to journalism institutions.",
         "examples": [
-          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {
@@ -89,7 +89,7 @@
         "short": "Mid-career programs help journalists hone leadership skills and propel them to the next level of their careers.",
         "description": "Mid-career programs help journalists hone leadership skills and propel them to the next level of their careers.",
         "examples": [
-        {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+        {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {
@@ -97,7 +97,7 @@
         "short": "Executive training and leadership programs prepare journalism leaders for success in a rapidly changing industry.",
         "description": "Executive training and leadership programs prepare journalism leaders for success in a rapidly changing industry.",
         "examples": [
-          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See examples on the Professional Development & Training tab of the Journalism DEI Tracker"}
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         }
       ]
@@ -109,7 +109,7 @@
         {
         "name": "Leadership",
         "short": "Leadership diversity in the news industry is growing, though still not representative.",
-        "description": "Leadership diversity in the news industry is growing, though still not representative. Annual research tracks the state of women and people of color in leadership positions in the field, and many programs are focused on providing leadership training to underrepresented groups.",
+        "description": "Leadership diversity in the news industry is growing, though still not representative. Annual research tracks the state of women and people of color in leadership positions in the field, and many programs are focused on providing leadership training to underrepresented groups:.",
         "examples": [
           {"url":"https://www.asne.org/diversity-survey-2018/", "text":"ASNE: 2018 Newsroom Diversity Survey"},
           {"url":"http://www.womensmediacenter.com/reports/the-status-of-women-of-color-in-the-u-s-media-2018-full-report", "text":"Women’s Media Center: The Status of Women of Color in the US Media 2018"},
@@ -119,26 +119,26 @@
         {
         "name": "DEI-focused roles",
         "short": "Newsrooms can bolster DEI efforts by establishing a position or committee focused on diversity, or training existing managers to build spaces that actively promote DEI.",
-        "description": "Newsrooms can bolster DEI efforts by establishing a position or committee focused on diversity, or training existing managers to build spaces that actively promote DEI. Learn more:",
+        "description": "Newsrooms can bolster DEI efforts by establishing a position or committee focused on diversity, or training existing managers to build spaces that actively promote DEI.",
         "examples": [
-          {"url":"hhttps://www.cjr.org/analysis/diversity_newsrooms_jobs_college_mentorship.php", "text":"Critical diversity checklist for newsroom managers"},
-          {"url":"hhttps://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2019", "text":"ProPublica's Diversity Committee"}
+          {"url":"hhttps://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2019", "text":"ProPublica's Diversity Committee"},
+          {"url":"hhttps://www.cjr.org/analysis/diversity_newsrooms_jobs_college_mentorship.php", "text":"Critical diversity checklist for newsroom managers"}
           ]
         },
         {
         "name": "Recuritment & Hiring",
-        "short": "Journalism organizations can strengthen the diversity of their candidate pools with a more intentional recruitment process, and adopting inclusive hiring policies.",
-        "description": "Inclusive hiring practices ensure that newsrooms are hiring from a diverse pool of candidates. Learn more:",
+        "short": "Journalism organizations can strengthen the diversity of candidate pool with a more intentional recruitment process, and adopting inclusive hiring policies.",
+        "description": "Inclusive hiring practices ensure that a diverse pool of candidates has the opportunity to be hired.",
         "examples": [
-            {"url":"https://hbr.org/2017/06/7-practical-ways-to-reduce-bias-in-your-hiring-process", "text":"Reduce Bias in Hiring"},
-            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See the DEI Tracker for organizations and universities for recruitment"},
-            {"url":"https://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2019", "text":"ProPublica's Rooney Rule"}
+          {"url":"https://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2019", "text":"ProPublica's Rooney Rule"},
+          {"url":"https://hbr.org/2017/06/7-practical-ways-to-reduce-bias-in-your-hiring-process", "text":"Reduce Bias in Hiring"},
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See the DEI Tracker for organizations and universities for recruitment"}
           ]
         },
         {
         "name": "Human resources policies",
-        "short": "Robust human resources policies address include flexibility for all workers, support for cultural expression, and support for workers dealing with internal and external harassment.",
-        "description": "Robust human resources policies address include flexibility for all workers, support for cultural expression, and support for workers dealing with internal and external harassment.",
+        "short": "Robust human resources policies address include flexibility for all workers, support for cultural expression, and support for workers dealing with harassment internally and externally.",
+        "description": "Robust human resources policies address include flexibility for all workers, support for cultural expression, and support for workers dealing with harassment internally and externally.",
         "examples": [
           {"url":"https://www.poynter.org/reporting-editing/2017/the-news-business-is-unfair-to-journalists-with-children-lets-change-it-for-the-better-update4/", "text":"Current newsroom policies don’t support parents"},
           {"url":"hhttps://www.poynter.org/reporting-editing/2017/comparing-parental-leave-policies-in-american-newsrooms/", "text":"Comparing newsroom family leave policies"},
@@ -150,7 +150,7 @@
         "short": "Mentorship and peer support are key to advancement in the field.",
         "description": "Mentorship and peer support are key to advancement in the field. News organizations can support employee peer groups and mentorship programs within an organization and in the broader field.",
         "examples": [
-           {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See the Organizations and Professional Development & Training tabs on the Journalism DEI Tracker"}
+           {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Examples on the Journalism DEI Tracker"}
           ]
         },
         {
@@ -165,11 +165,11 @@
         {
         "name": "External accountability",
         "short": "Newsrooms can hold themseves accountable with a public commitment to diversity beyond a statement on a website.",
-        "description": "Newsrooms can hold themseves accountable with a public commitment to diversity beyond a statement on a website. This means publishing exactly what they are doing to increase diversity and inclusion. For example:",
+        "description": "Newsrooms can hold themseves accountable with a public commitment to diversity beyond a statement on a website. This means publishing exactly what they are doing to increase diversity and inclusion.",
         "examples": [
-            {"url":"https://www.npr.org/sections/publiceditor/2018/01/23/570204215/nprs-staff-diversity-numbers-2017", "text":"NPR publishes metrics and related year-over-year analysis"},
-            {"url":"https://www.nytco.com/company/diversity-and-inclusion/", "text":"New York Times’ annual diversity report"},
-            {"url":"https://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2018", "text":"ProPublica publishes internal metrics"}
+          {"url":"https://www.propublica.org/article/what-propublica-is-doing-about-diversity-in-2018", "text":"ProPublica publishes internal metrics"},
+          {"url":"https://www.npr.org/sections/publiceditor/2018/01/23/570204215/nprs-staff-diversity-numbers-2017", "text":"NPR publishes metrics and related year-over-year analysis"},
+          {"url":"https://www.nytco.com/company/diversity-and-inclusion/", "text":"New York Times’ annual diversity report"}
           ]
         }
     ]
@@ -183,8 +183,8 @@
         "short": "News outlets—from mainstream organizations to smaller outlets focused on specific communities— can better serve audiences by focusing on relevant topics.",
         "description": "Newsrooms may focus exclusively on issues of racial justice or gender equality. Mainstream newsrooms can consider the merits of a “race” beat, and the range and prominence of various beats.",
         "examples": [
-            {"url":"https://archives.cjr.org/minority_reports/race_beats.php?page=all", "text":"The history of race beats"},
-            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See nonprofit news organizations serving diverse communities on the News Outlets & Projects tab of the DEI Tracker"}
+          {"url":"https://archives.cjr.org/minority_reports/race_beats.php?page=all", "text":"The history of race beats"},
+          {"url":"https://medium.com/the-engaged-journalism-lab", "text":"Nonprofit news organizations serving diverse communities on the DEI Tracker"}
           ]
         },
         {
@@ -205,7 +205,7 @@
             {"url":"https://www.diversitystyleguide.com/", "text":"Diversity Style Guide"},
             {"url":"https://www.nlgja.org/resources/journalists-toolbox/", "text":"The Association of LGBTQ Journalists’ Journalists Toolbox "},
             {"url":"https://najanewsroom.com/wp-content/uploads/2018/11/NAJA_Reporting_and_Indigenous_Terminology_Guide.pdf", "text":"Native American Journalists Association: Reporting and Indigenous Terminology "},
-            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Style Guides on the Resources tab of the Journalism DEI Tracker"}
+            {"url":"https://medium.com/the-engaged-journalism-lab", "text":"See Style Guides on the DEI Tracker"}
           ]
         },
         {
@@ -269,8 +269,8 @@
         },
         {
         "name": "Crowdsourcing",
-        "short": "Crowdsourcing allows audience members to contribute to reporting directly, ideally reflecting a more representative set of perspectives.",
-        "description": "Crowdsourcing allows audience members to contribute to reporting directly, ideally reflecting a more representative set of perspectives.",
+        "short": "Crowdsourcing allows audience members to contribute to reporting directly, ideally reflecting a more representative sample.",
+        "description": "Crowdsourcing allows audience members to contribute to reporting directly, ideally reflecting a more representative sample.",
         "examples": [
           {"url":"https://www.cjr.org/tow_center_reports/guide_to_crowdsourcing.php", "text":"CJR’s Guide to Crowdsourcing"}
           ]
@@ -283,8 +283,8 @@
     "interventions": [
         {
         "name": "Targeted outreach",
-        "short": "Targeted outreach allows for connecting with specific populations and regions.",
-        "description": "Targeted outreach allows for connecting with specific populations and regions.",
+        "short": "Targeted outreach allows for reaching specific populations and regions.",
+        "description": "Targeted outreach allows for reaching specific populations and regions.",
         "examples": [
           {"url":"https://medium.com/engagement-at-kpcc/kpcc-studied-how-to-cover-the-2020-census-so-you-dont-have-to-841298159739", "text":"KPCC's Outreach around the 2020 Census "}
           ]
@@ -300,8 +300,8 @@
         },
         {
         "name": "Multiple languages",
-        "short": "Bilingual publication and translation helps to newsrooms to reach populations that primarily speak languages other than English.",
-        "description": "Bilingual publication and translation helps to newsrooms to reach populations that primarily speak languages other than English.",
+        "short": "Bilingual publication and translation helps to reach immigrant populations.",
+        "description": "Bilingual publication and translation helps to reach immigrant populations.",
         "examples": [
           {"url":"http://borderzine.com/", "text":"Borderzine"},
           {"url":"https://boyleheightsbeat.com/", "text":"Boyle Heights Beat"}
@@ -341,8 +341,8 @@
         },
         {
         "name": "New business models",
-        "short": "Hybrid models are allowing DEI-focused journalism projects to leverage the resources of for-profit, non-profit, and/or university partnerships.",
-        "description": "Hybrid models are allowing DEI-focused journalism projects to leverage the resources of for-profit, non-profit, and/or university partnerships.",
+        "short": "Hybrid models are allowing DEI-focused journalism projects to leverage the resources of for-profit, non-profit, and/or university status.",
+        "description": "Hybrid models are allowing DEI-focused journalism projects to leverage the resources of for-profit, non-profit, and/or university status.",
         "examples": [
           {"url":"https://boyleheightsbeat.com/", "text":"Boyle Heights Beat is the result of a collaboration between the University of Southern California and Hoy LA "},
           {"url":"https://voicesofny.org/", "text":"Voices of NY is a publication from the Center for Community and Ethnic Media (CCEM) at the Craig Newmark Graduate School of Journalism at the City University of New York"}
@@ -356,8 +356,8 @@
     "interventions": [
         {
         "name": "Equitable frameworks",
-        "short": "Traditional evaluation frameworks often reinforce existing power dynamics, such as valuing scale over relationships, or prioritizing objectivity.",
-        "description": "Traditional evaluation frameworks often reinforce existing power dynamics, such as valuing scale over relationships, or prioritizing objectivity. Learn more about other models:",
+        "short": "Traditional evaluation frameworks are often rooted in oppressive ideas, instead funders and organizations can employ evaluation frameworks that are rooted in equity.",
+        "description": "Traditional evaluation frameworks are rooted in oppressive systems.",
         "examples": [
           {"url":"https://cep.org/the-time-is-now-to-embed-equity-in-evaluation-practices/", "text":"The time is now to embed equity in evaluation practices"},
           {"url":"https://www.racialequitytools.org/evaluate", "text":"Racial Equity Evaluation tools"}
@@ -396,7 +396,7 @@
           ]
         },
         {
-        "name": "Organizations",
+        "name": "Professional organizations",
         "short": "Professional organizations exist to support DEI within journalism",
         "description": "Professional organizations exist to support DEI within journalism.",
         "examples": [
