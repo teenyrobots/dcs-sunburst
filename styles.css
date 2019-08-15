@@ -134,7 +134,7 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 .orange {
-  fill: #f0142c;
+  fill: #ff6f6f;
 }
 
 .orange + text {
@@ -142,7 +142,7 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 .selected {
-  fill: #ff6f6f;
+  fill: #f0142c;
 }
 
 .selected + text {
