@@ -9,7 +9,7 @@ d3.json("data.json", function(data) {
 //-------------------------------------------------
 //Here are some helper functions for sunburst generation
 
-let colors = [
+let colors1 = [
   "211, 228, 241",
   "226, 240, 251",
   "197, 215, 229",
@@ -25,6 +25,30 @@ let colors = [
   "211, 228, 241",
   "226, 240, 251",
   "197, 215, 229"
+]
+
+let colors2 = [
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210"
+]
+
+let colors = [
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210",
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210",
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210",
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210",
+  "240, 240, 240",
+  "225, 225, 225",
+  "210, 210, 210"
 ]
 
 function innerArrayContentOpp(theData) {
@@ -107,10 +131,10 @@ function sunburst(id){
     })
     .attr("d", arc)
     .on("mouseover", function() { d3.select(this)
-        .classed("orange", true);
+        .classed("subspot", true);
     })
     .on("mouseout", function(d) { d3.select(this)
-        .classed("orange", false);
+        .classed("subspot", false);
     })
     .on("click", function(d, i)
       {
@@ -131,8 +155,8 @@ function sunburst(id){
         ex.selectAll("li").remove();
         exShow.classed("no", true);
 
-        d3.selectAll(".path").classed("selected", false);
-        d3.select(this).classed("selected", true);
+        d3.selectAll(".path").classed("spot", false);
+        d3.select(this).classed("spot", true);
       }
     )
 
@@ -184,10 +208,10 @@ function sunburst(id){
       .attr("stroke", "white")
       .attr("d", innerArc)
       .on("mouseover", function() { d3.select(this)
-          .classed("orange", true);
+          .classed("subspot", true);
       })
       .on("mouseout", function(d) { d3.select(this)
-          .classed("orange", false);
+          .classed("subspot", false);
       })
       .on("click", function(d, i)
         {
@@ -222,8 +246,8 @@ function sunburst(id){
             }
           };
 
-          d3.selectAll(".path").classed("selected", false);
-          d3.select(this).classed("selected", true);
+          d3.selectAll(".path").classed("spot", false);
+          d3.select(this).classed("spot", true);
         }
     )
 
