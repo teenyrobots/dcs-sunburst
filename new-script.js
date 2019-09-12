@@ -1,3 +1,20 @@
+var vData = {
+    'id': 'TOPICS', 'children': [{
+        'id': 'Topic A',
+        'children': [{'id': 'Sub A1', 'size': 1}, {'id': 'Sub A2', 'size': 1}]
+    }, {
+        'id': 'Topic B',
+        'children': [{'id': 'Sub B1', 'size': 1}, {'id': 'Sub B2', 'size': 1},
+	        {'id': 'Sub B3', 'size': 1}]
+    }, {
+        'id': 'Topic C',
+        'children': [{'id': 'Sub A1', 'size': 1}, {'id': 'Sub A2', 'size': 1}]
+    }]
+};
+
+
+
+
 var vWidth = 300;  // <-- 1
 var vHeight = 300;
 var vRadius = Math.min(vWidth, vHeight) / 2;  // < -- 2
@@ -19,10 +36,10 @@ var vArc = d3.arc()
     .innerRadius(function (d) { return d.y0 })
     .outerRadius(function (d) { return d.y1 });
 
-var vRoot = d3.hierarchy(theData)  // <--1
+var vRoot = d3.hierarchy(vData)  // <--1
   .sum(function (d) {
-    console.log(d.interventions.length);
-    d.interventions.length });  // <-- 2
+    console.log(d);
+    return d.size; });  // <-- 2
 var vNodes = vRoot.descendants();  // <--3
 vLayout(vRoot);  // <--4
 

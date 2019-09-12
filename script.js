@@ -9,30 +9,6 @@ d3.json("data.json", function(data) {
 //-------------------------------------------------
 //Here are some helper functions for sunburst generation
 
-let colors1 = [
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229",
-  "211, 228, 241",
-  "226, 240, 251",
-  "197, 215, 229"
-]
-
-let colors2 = [
-  "240, 240, 240",
-  "225, 225, 225",
-  "210, 210, 210"
-]
-
 let colors = [
   "240, 240, 240",
   "225, 225, 225",
@@ -88,15 +64,15 @@ function exBye() {
 function sunburst(id){
 
   // bostock's margin convention leaves room for scales
-  let margin = {top: 50, right: 50, bottom: 10, left: 50};
+  let margin = {top: 10, right: 10, bottom: 10, left: 10};
 
   //FINAL SIZE OF VIZ
-  let w = 1000 - margin.left - margin.right;
-  let h = 1000  - margin.top - margin.bottom;
+  let w = 940 - margin.left - margin.right;
+  let h = 940  - margin.top - margin.bottom;
 
   //MAKES CIRCLES
   let outerRadius = w * .5,
-	 innerRadius = h * .425,
+	 innerRadius = h * .445,
    arc = d3.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius),
