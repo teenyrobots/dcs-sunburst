@@ -132,16 +132,22 @@ a:hover, a:active, .linkish:hover, .linkish:active {
   margin: 0;
 }
 
-.spot {
-  fill: rgba(124, 26, 40, 1);
-}
-
-.subspot {
+.red {
   fill: rgba(237, 27, 52, 1);
   cursor: pointer;
 }
 
-.subspot + text, .spot + text {
+.blue {
+  fill: rgba(62, 151, 211, 1);
+  cursor: pointer;
+}
+
+.darkred {
+  fill: rgba(124, 26, 40, 1);
+  cursor: pointer;
+}
+
+.blue + text, .red + text, .darkred + text {
   fill: white;
 }
 

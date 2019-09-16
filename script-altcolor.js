@@ -9,7 +9,7 @@ d3.json("data.json", function(data) {
 //-------------------------------------------------
 //Here are some helper functions for sunburst generation
 
-let colors = [
+let colors1 = [
   "240, 240, 240",
   "225, 225, 225",
   "210, 210, 210",
@@ -27,7 +27,7 @@ let colors = [
   "210, 210, 210"
 ]
 
-let colors2 = [
+let colors = [
   "214, 230, 244",
   "233, 239, 249",
   "242, 246, 251",
@@ -125,10 +125,10 @@ function sunburst(id){
     })
     .attr("d", arc)
     .on("mouseover", function() { d3.select(this)
-        .classed("blue", true);
+        .classed("red", true);
     })
     .on("mouseout", function(d) { d3.select(this)
-        .classed("blue", false);
+        .classed("red", false);
     })
     .on("click", function(d, i)
       {
@@ -149,8 +149,8 @@ function sunburst(id){
         ex.selectAll("li").remove();
         exShow.classed("no", true);
 
-        d3.selectAll(".path").classed("red", false);
-        d3.select(this).classed("red", true);
+        d3.selectAll(".path").classed("blue", false);
+        d3.select(this).classed("blue", true);
       }
     )
 
@@ -202,10 +202,10 @@ function sunburst(id){
       .attr("stroke", "white")
       .attr("d", innerArc)
       .on("mouseover", function() { d3.select(this)
-          .classed("blue", true);
+          .classed("red", true);
       })
       .on("mouseout", function(d) { d3.select(this)
-          .classed("blue", false);
+          .classed("red", false);
       })
       .on("click", function(d, i)
         {
@@ -240,8 +240,8 @@ function sunburst(id){
             }
           };
 
-          d3.selectAll(".path").classed("red", false);
-          d3.select(this).classed("red", true);
+          d3.selectAll(".path").classed("blue", false);
+          d3.select(this).classed("blue", true);
         }
     )
 
