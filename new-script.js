@@ -14,9 +14,8 @@ var vData = {
 
 
 
-
-var vWidth = 300;  // <-- 1
-var vHeight = 300;
+var vWidth = 940;  // <-- 1
+var vHeight = 940;
 var vRadius = Math.min(vWidth, vHeight) / 2;  // < -- 2
 var vColor = d3.scaleOrdinal(d3.schemeCategory20b);   // <-- 3
 
@@ -28,13 +27,14 @@ var g = d3.select('svg')  // <-- 1
         'translate(' + vWidth / 2 + ',' + vHeight / 2 + ')');  // <-- 4
 
 var vLayout = d3.partition()  // <-- 1
-    .size([2 * Math.PI, vRadius]);  // <-- 2
+    .size([2 * Math.PI, vRadius]);
 
+//reversing the nodes: https://stackoverflow.com/questions/50241534/d3-sunburst-chart-with-root-node-on-the-outside-ring
 var vArc = d3.arc()
     .startAngle(function (d) { return d.x0 })
     .endAngle(function (d) { return d.x1 })
-    .innerRadius(function (d) { return d.y0 })
-    .outerRadius(function (d) { return d.y1 });
+    .innerRadius(function (d) { return vRadius - d.y1 })
+    .outerRadius(function (d) { return vRadius - d.y0 });
 
 var vRoot = d3.hierarchy(vData)  // <--1
   .sum(function (d) {
