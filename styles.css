@@ -1,6 +1,7 @@
 /*styles for TK project*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300.300i,400,400i,700,700i');
+@import url("https://use.typekit.net/gyc4alb.css");
 
 * {
   box-sizing: border-box;
@@ -18,15 +19,15 @@ body {
   height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: ff-meta-serif-web-pro, "Georgia", serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 h1 {
+  font-family: aktiv-grotesk-condensed, "Arial Narrow", sans-serif;
   font-size: 52px;
   text-transform: uppercase;
-  font-style: italic;
   color: rgba(237, 27, 52, 1);
-  font-weight: 900;
   margin: 1rem auto;
 }
 
@@ -92,12 +93,15 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 }
 
 .cat {
+  font-family: aktiv-grotesk-condensed, "Arial Narrow", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
 }
 
 .title {
+  font-family: aktiv-grotesk-condensed, "Arial Narrow", sans-serif;
   margin: 8px 0;
+  font-size: 2rem;
   color:  rgba(237, 27, 52, 1);
 }
 
