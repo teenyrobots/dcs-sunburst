@@ -101,7 +101,7 @@ a:hover, a:active, .linkish:hover, .linkish:active {
 .title {
   font-family: aktiv-grotesk-condensed, "Arial Narrow", sans-serif;
   margin: 8px 0;
-  font-size: 2rem;
+  font-size: 32px;
   color:  rgba(237, 27, 52, 1);
 }
 
